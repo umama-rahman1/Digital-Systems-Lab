@@ -1,0 +1,12 @@
+entity two_gates is
+port ( A , B , D : in bit ;
+E : out bit );
+end two_gates ;
+architecture gates of two_gates is
+signal C : bit ;
+begin
+-- Comments are started with 2 dashes and run to the end
+-- of the line .
+C <= A and B ; -- This line is concurrent with
+E <= C or D ; -- this line .
+end gates ;
