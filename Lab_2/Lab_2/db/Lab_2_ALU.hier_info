@@ -1,0 +1,248 @@
+|ALU
+A[0] => AandB[0].IN0
+A[0] => AorB[0].IN0
+A[0] => AddSub8:AddSub81.A[0]
+A[1] => AandB[1].IN0
+A[1] => AorB[1].IN0
+A[1] => AddSub8:AddSub81.A[1]
+A[2] => AandB[2].IN0
+A[2] => AorB[2].IN0
+A[2] => AddSub8:AddSub81.A[2]
+A[3] => AandB[3].IN0
+A[3] => AorB[3].IN0
+A[3] => AddSub8:AddSub81.A[3]
+A[4] => AandB[4].IN0
+A[4] => AorB[4].IN0
+A[4] => AddSub8:AddSub81.A[4]
+A[5] => AandB[5].IN0
+A[5] => AorB[5].IN0
+A[5] => AddSub8:AddSub81.A[5]
+A[6] => AandB[6].IN0
+A[6] => AorB[6].IN0
+A[6] => AddSub8:AddSub81.A[6]
+A[7] => AandB[7].IN0
+A[7] => AorB[7].IN0
+A[7] => AddSub8:AddSub81.A[7]
+B[0] => AandB[0].IN1
+B[0] => AorB[0].IN1
+B[0] => AddSub8:AddSub81.B[0]
+B[1] => AandB[1].IN1
+B[1] => AorB[1].IN1
+B[1] => AddSub8:AddSub81.B[1]
+B[2] => AandB[2].IN1
+B[2] => AorB[2].IN1
+B[2] => AddSub8:AddSub81.B[2]
+B[3] => AandB[3].IN1
+B[3] => AorB[3].IN1
+B[3] => AddSub8:AddSub81.B[3]
+B[4] => AandB[4].IN1
+B[4] => AorB[4].IN1
+B[4] => AddSub8:AddSub81.B[4]
+B[5] => AandB[5].IN1
+B[5] => AorB[5].IN1
+B[5] => AddSub8:AddSub81.B[5]
+B[6] => AandB[6].IN1
+B[6] => AorB[6].IN1
+B[6] => AddSub8:AddSub81.B[6]
+B[7] => AandB[7].IN1
+B[7] => AorB[7].IN1
+B[7] => AddSub8:AddSub81.B[7]
+O => Cin.IN0
+O => mux4:MUX1.O
+P => Cin.IN1
+P => mux4:MUX1.P
+C << AddSub8:AddSub81.Cout
+S[0] << mux4:MUX1.F[0]
+S[1] << mux4:MUX1.F[1]
+S[2] << mux4:MUX1.F[2]
+S[3] << mux4:MUX1.F[3]
+S[4] << mux4:MUX1.F[4]
+S[5] << mux4:MUX1.F[5]
+S[6] << mux4:MUX1.F[6]
+S[7] << mux4:MUX1.F[7]
+
+
+|ALU|AddSub8:AddSub81
+A[0] => FullAdder:FA0.X
+A[1] => FullAdder:FA1.X
+A[2] => FullAdder:FA2.X
+A[3] => FullAdder:FA3.X
+A[4] => FullAdder:FA4.X
+A[5] => FullAdder:FA5.X
+A[6] => FullAdder:FA6.X
+A[7] => FullAdder:FA7.X
+B[0] => comb.IN0
+B[1] => comb.IN0
+B[2] => comb.IN0
+B[3] => comb.IN0
+B[4] => comb.IN0
+B[5] => comb.IN0
+B[6] => comb.IN0
+B[7] => comb.IN0
+Cin => comb.IN1
+Cin => comb.IN1
+Cin => comb.IN1
+Cin => comb.IN1
+Cin => comb.IN1
+Cin => comb.IN1
+Cin => comb.IN1
+Cin => comb.IN1
+Cin => FullAdder:FA0.Cin
+Sum[0] <= FullAdder:FA0.Sum
+Sum[1] <= FullAdder:FA1.Sum
+Sum[2] <= FullAdder:FA2.Sum
+Sum[3] <= FullAdder:FA3.Sum
+Sum[4] <= FullAdder:FA4.Sum
+Sum[5] <= FullAdder:FA5.Sum
+Sum[6] <= FullAdder:FA6.Sum
+Sum[7] <= FullAdder:FA7.Sum
+Cout <= FullAdder:FA7.Cout
+
+
+|ALU|AddSub8:AddSub81|FullAdder:FA0
+X => Cout.IN0
+X => Cout.IN0
+Y => Cout.IN1
+Y => Cout.IN1
+Cin => Sum.IN1
+Cin => Cout.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|AddSub8:AddSub81|FullAdder:FA1
+X => Cout.IN0
+X => Cout.IN0
+Y => Cout.IN1
+Y => Cout.IN1
+Cin => Sum.IN1
+Cin => Cout.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|AddSub8:AddSub81|FullAdder:FA2
+X => Cout.IN0
+X => Cout.IN0
+Y => Cout.IN1
+Y => Cout.IN1
+Cin => Sum.IN1
+Cin => Cout.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|AddSub8:AddSub81|FullAdder:FA3
+X => Cout.IN0
+X => Cout.IN0
+Y => Cout.IN1
+Y => Cout.IN1
+Cin => Sum.IN1
+Cin => Cout.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|AddSub8:AddSub81|FullAdder:FA4
+X => Cout.IN0
+X => Cout.IN0
+Y => Cout.IN1
+Y => Cout.IN1
+Cin => Sum.IN1
+Cin => Cout.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|AddSub8:AddSub81|FullAdder:FA5
+X => Cout.IN0
+X => Cout.IN0
+Y => Cout.IN1
+Y => Cout.IN1
+Cin => Sum.IN1
+Cin => Cout.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|AddSub8:AddSub81|FullAdder:FA6
+X => Cout.IN0
+X => Cout.IN0
+Y => Cout.IN1
+Y => Cout.IN1
+Cin => Sum.IN1
+Cin => Cout.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|AddSub8:AddSub81|FullAdder:FA7
+X => Cout.IN0
+X => Cout.IN0
+Y => Cout.IN1
+Y => Cout.IN1
+Cin => Sum.IN1
+Cin => Cout.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|mux4:MUX1
+I1[0] => Mux7.IN0
+I1[1] => Mux6.IN0
+I1[2] => Mux5.IN0
+I1[3] => Mux4.IN0
+I1[4] => Mux3.IN0
+I1[5] => Mux2.IN0
+I1[6] => Mux1.IN0
+I1[7] => Mux0.IN0
+I2[0] => Mux7.IN1
+I2[1] => Mux6.IN1
+I2[2] => Mux5.IN1
+I2[3] => Mux4.IN1
+I2[4] => Mux3.IN1
+I2[5] => Mux2.IN1
+I2[6] => Mux1.IN1
+I2[7] => Mux0.IN1
+I3[0] => Mux7.IN2
+I3[1] => Mux6.IN2
+I3[2] => Mux5.IN2
+I3[3] => Mux4.IN2
+I3[4] => Mux3.IN2
+I3[5] => Mux2.IN2
+I3[6] => Mux1.IN2
+I3[7] => Mux0.IN2
+I4[0] => Mux7.IN3
+I4[1] => Mux6.IN3
+I4[2] => Mux5.IN3
+I4[3] => Mux4.IN3
+I4[4] => Mux3.IN3
+I4[5] => Mux2.IN3
+I4[6] => Mux1.IN3
+I4[7] => Mux0.IN3
+O => Mux0.IN4
+O => Mux1.IN4
+O => Mux2.IN4
+O => Mux3.IN4
+O => Mux4.IN4
+O => Mux5.IN4
+O => Mux6.IN4
+O => Mux7.IN4
+P => Mux0.IN5
+P => Mux1.IN5
+P => Mux2.IN5
+P => Mux3.IN5
+P => Mux4.IN5
+P => Mux5.IN5
+P => Mux6.IN5
+P => Mux7.IN5
+F[0] <= Mux7.DB_MAX_OUTPUT_PORT_TYPE
+F[1] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+F[2] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+F[3] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+F[4] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+F[5] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+F[6] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+F[7] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+

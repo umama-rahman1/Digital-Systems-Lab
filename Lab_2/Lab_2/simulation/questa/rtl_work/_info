@@ -1,0 +1,180 @@
+m255
+K4
+z2
+Z0 !s99 nomlopt
+R0
+R0
+R0
+R0
+R0
+!s11e vcom 2021.2 2021.04, Apr 14 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 dD:/Uni/Academic Semester 5/ECE 5500 Digital systems/Lab 2/simulation/questa
+T_opt
+!s110 1676643715
+VTM[82RicgAXM81BizeY4J0
+04 4 9 work mux4 structure 1
+=1-7cb27de2b4ef-63ef8d82-1ba-4e24
+!s124 OEM10U1 
+Z2 o-quiet -auto_acc_if_foreign -work work
+Z3 tCvgOpt 0
+n@_opt
+Z4 OL;O;2021.2;73
+R1
+T_opt1
+!s110 1676647305
+VTT2<6TX^f01kj]SJ@JYj83
+Z5 04 3 9 work alu structure 1
+=1-7cb27de2b4ef-63ef9b89-117-32a4
+Z6 !s124 OEM10U2 
+R2
+R3
+n@_opt1
+R4
+T_opt2
+!s110 1676647300
+Vi7^1oO]VSn`CE>Pz_RUgT3
+R5
+=1-7cb27de2b4ef-63ef9b84-1b7-4f2c
+R6
+o-quiet -auto_acc_if_foreign -work work +acc
+R3
+n@_opt2
+R4
+R1
+Eaddsub8
+w1676641704
+!i122 4
+R1
+8D:/Uni/Academic Semester 5/ECE 5500 Digital systems/Lab 2/FullAdder_And_Subtractor_8bit.vhd
+FD:/Uni/Academic Semester 5/ECE 5500 Digital systems/Lab 2/FullAdder_And_Subtractor_8bit.vhd
+l0
+L1 1
+VIXJZEUaY0>oozD@e?kH;`3
+!s100 kHMd<5L5YSd^WOazeZFPg1
+Z7 OL;C;2021.2;73
+32
+Z8 !s110 1676647141
+!i10b 1
+Z9 !s108 1676647141.000000
+!s90 -reportprogress|300|-work|work|D:/Uni/Academic Semester 5/ECE 5500 Digital systems/Lab 2/FullAdder_And_Subtractor_8bit.vhd|
+!s107 D:/Uni/Academic Semester 5/ECE 5500 Digital systems/Lab 2/FullAdder_And_Subtractor_8bit.vhd|
+!i113 0
+Z10 o-work work
+Z11 tExplicit 1 CvgOpt 0
+Ealu
+Z12 w1676645824
+!i122 2
+R1
+Z13 8D:/Uni/Academic Semester 5/ECE 5500 Digital systems/Lab 2/ALU.vhd
+Z14 FD:/Uni/Academic Semester 5/ECE 5500 Digital systems/Lab 2/ALU.vhd
+l0
+L1 1
+VjHQ@WhjEEUP:<[:Cz9aET2
+!s100 4;FK5OlLAJbCW7MT0WV]11
+R7
+32
+R8
+!i10b 1
+Z15 !s108 1676647140.000000
+Z16 !s90 -reportprogress|300|-work|work|D:/Uni/Academic Semester 5/ECE 5500 Digital systems/Lab 2/ALU.vhd|
+Z17 !s107 D:/Uni/Academic Semester 5/ECE 5500 Digital systems/Lab 2/ALU.vhd|
+!i113 0
+R10
+R11
+Astructure
+DEx4 work 3 alu 0 22 jHQ@WhjEEUP:<[:Cz9aET2
+!i122 2
+l35
+L12 34
+VEF`391FBP@@7ZHob3RFlk0
+!s100 P@Jd:D>@1DS:4TfGK?Yk22
+R7
+32
+R8
+!i10b 1
+R15
+R16
+R17
+!i113 0
+R10
+R11
+Efulladder
+Z18 w1676640446
+!i122 3
+R1
+Z19 8D:/Uni/Academic Semester 5/ECE 5500 Digital systems/Lab 2/FullAdder.vhd
+Z20 FD:/Uni/Academic Semester 5/ECE 5500 Digital systems/Lab 2/FullAdder.vhd
+l0
+L1 1
+VZ:^3NJ23]>>b0_JK^nhA>2
+!s100 I<=@DERAn=ZBSzVbAnALT1
+R7
+32
+R8
+!i10b 1
+R9
+Z21 !s90 -reportprogress|300|-work|work|D:/Uni/Academic Semester 5/ECE 5500 Digital systems/Lab 2/FullAdder.vhd|
+Z22 !s107 D:/Uni/Academic Semester 5/ECE 5500 Digital systems/Lab 2/FullAdder.vhd|
+!i113 0
+R10
+R11
+Aequations
+DEx4 work 9 fulladder 0 22 Z:^3NJ23]>>b0_JK^nhA>2
+!i122 3
+l7
+L6 5
+VzT?]GL3ffPRoh:iAe0kJi0
+!s100 QF>SjK:2n2]3ooA=9gGn[1
+R7
+32
+R8
+!i10b 1
+R9
+R21
+R22
+!i113 0
+R10
+R11
+Emux4
+Z23 w1676643414
+!i122 5
+R1
+Z24 8D:/Uni/Academic Semester 5/ECE 5500 Digital systems/Lab 2/MUX.vhd
+Z25 FD:/Uni/Academic Semester 5/ECE 5500 Digital systems/Lab 2/MUX.vhd
+l0
+L1 1
+V=Qn]lSd1kk]5@g8<`n1kO0
+!s100 zJhifl?cWC0bEimbc7`8O2
+R7
+32
+R8
+!i10b 1
+R9
+Z26 !s90 -reportprogress|300|-work|work|D:/Uni/Academic Semester 5/ECE 5500 Digital systems/Lab 2/MUX.vhd|
+Z27 !s107 D:/Uni/Academic Semester 5/ECE 5500 Digital systems/Lab 2/MUX.vhd|
+!i113 0
+R10
+R11
+Astructure
+DEx4 work 4 mux4 0 22 =Qn]lSd1kk]5@g8<`n1kO0
+!i122 5
+l15
+L12 15
+Vd_iG7`d3<W>f=1T]?4ZbP3
+!s100 d^_eVblRV>O]fdcY?Z2RA3
+R7
+32
+R8
+!i10b 1
+R9
+R26
+R27
+!i113 0
+R10
+R11
