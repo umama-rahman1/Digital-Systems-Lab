@@ -1,0 +1,1172 @@
+# Reading pref.tcl
+# //  Questa Intel Starter FPGA Edition-64
+# //  Version 2021.2 win64 Apr 14 2021
+# //
+# //  Copyright 1991-2021 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# do Lab_2_ALU_run_msim_rtl_vhdl.do
+# if ![file isdirectory vhdl_libs] {
+# 	file mkdir vhdl_libs
+# }
+# 
+# vlib vhdl_libs/altera
+# ** Warning: (vlib-34) Library already exists at "vhdl_libs/altera".
+# Errors: 0, Warnings: 1
+# vmap altera ./vhdl_libs/altera
+# Questa Intel Starter FPGA Edition-64 vmap 2021.2 Lib Mapping Utility 2021.04 Apr 14 2021
+# vmap altera ./vhdl_libs/altera 
+# Copying E:/Quartus/questa_fse/win64/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# vcom -93 -work altera {e:/quartus/quartus/eda/sim_lib/altera_syn_attributes.vhd}
+# Questa Intel Starter FPGA Edition-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 11:48:12 on Feb 17,2023
+# vcom -reportprogress 300 -93 -work altera e:/quartus/quartus/eda/sim_lib/altera_syn_attributes.vhd 
+# -- Loading package STANDARD
+# -- Compiling package altera_syn_attributes
+# End time: 11:48:12 on Feb 17,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work altera {e:/quartus/quartus/eda/sim_lib/altera_standard_functions.vhd}
+# Questa Intel Starter FPGA Edition-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 11:48:12 on Feb 17,2023
+# vcom -reportprogress 300 -93 -work altera e:/quartus/quartus/eda/sim_lib/altera_standard_functions.vhd 
+# -- Loading package STANDARD
+# -- Compiling package altera_standard_functions
+# -- Compiling package body altera_standard_functions
+# -- Loading package altera_standard_functions
+# End time: 11:48:13 on Feb 17,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -93 -work altera {e:/quartus/quartus/eda/sim_lib/alt_dspbuilder_package.vhd}
+# Questa Intel Starter FPGA Edition-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 11:48:13 on Feb 17,2023
+# vcom -reportprogress 300 -93 -work altera e:/quartus/quartus/eda/sim_lib/alt_dspbuilder_package.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling package alt_dspbuilder_package
+# -- Compiling package body alt_dspbuilder_package
+# -- Loading package alt_dspbuilder_package
+# End time: 11:48:13 on Feb 17,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work altera {e:/quartus/quartus/eda/sim_lib/altera_europa_support_lib.vhd}
+# Questa Intel Starter FPGA Edition-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 11:48:13 on Feb 17,2023
+# vcom -reportprogress 300 -93 -work altera e:/quartus/quartus/eda/sim_lib/altera_europa_support_lib.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling package altera_europa_support_lib
+# -- Compiling package body altera_europa_support_lib
+# -- Loading package altera_europa_support_lib
+# End time: 11:48:13 on Feb 17,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work altera {e:/quartus/quartus/eda/sim_lib/altera_primitives_components.vhd}
+# Questa Intel Starter FPGA Edition-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 11:48:13 on Feb 17,2023
+# vcom -reportprogress 300 -93 -work altera e:/quartus/quartus/eda/sim_lib/altera_primitives_components.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package VITAL_Timing
+# -- Loading package VITAL_Primitives
+# -- Compiling package dffeas_pack
+# -- Loading package dffeas_pack
+# -- Compiling package altera_primitives_components
+# End time: 11:48:13 on Feb 17,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work altera {e:/quartus/quartus/eda/sim_lib/altera_primitives.vhd}
+# Questa Intel Starter FPGA Edition-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 11:48:13 on Feb 17,2023
+# vcom -reportprogress 300 -93 -work altera e:/quartus/quartus/eda/sim_lib/altera_primitives.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity GLOBAL
+# -- Compiling architecture BEHAVIOR of GLOBAL
+# -- Compiling entity CARRY
+# -- Compiling architecture BEHAVIOR of CARRY
+# -- Compiling entity CASCADE
+# -- Compiling architecture BEHAVIOR of CASCADE
+# -- Compiling entity CARRY_SUM
+# -- Compiling architecture BEHAVIOR of CARRY_SUM
+# -- Compiling entity EXP
+# -- Compiling architecture BEHAVIOR of EXP
+# -- Compiling entity SOFT
+# -- Compiling architecture BEHAVIOR of SOFT
+# -- Compiling entity OPNDRN
+# -- Compiling architecture BEHAVIOR of OPNDRN
+# -- Compiling entity ROW_GLOBAL
+# -- Compiling architecture BEHAVIOR of ROW_GLOBAL
+# -- Compiling entity TRI
+# -- Compiling architecture BEHAVIOR of TRI
+# -- Compiling entity LUT_INPUT
+# -- Compiling architecture BEHAVIOR of LUT_INPUT
+# -- Compiling entity LUT_OUTPUT
+# -- Compiling architecture BEHAVIOR of LUT_OUTPUT
+# -- Compiling entity latch
+# -- Compiling architecture BEHAVIOR of latch
+# -- Compiling entity dlatch
+# -- Compiling architecture BEHAVIOR of dlatch
+# -- Compiling entity PRIM_GDFF
+# -- Compiling architecture BEHAVIOR of PRIM_GDFF
+# -- Loading entity PRIM_GDFF
+# -- Compiling entity DFF
+# -- Compiling architecture BEHAVIOR of DFF
+# -- Compiling entity DFFE
+# -- Compiling architecture BEHAVIOR of DFFE
+# -- Compiling entity DFFEA
+# -- Compiling architecture BEHAVIOR of DFFEA
+# -- Loading package VITAL_Timing
+# -- Loading package VITAL_Primitives
+# -- Loading package dffeas_pack
+# -- Compiling entity DFFEAS
+# -- Compiling architecture vital_dffeas of dffeas
+# -- Compiling entity PRIM_GTFF
+# -- Compiling architecture BEHAVIOR of PRIM_GTFF
+# -- Loading entity PRIM_GTFF
+# -- Compiling entity TFF
+# -- Compiling architecture BEHAVIOR of TFF
+# -- Compiling entity TFFE
+# -- Compiling architecture BEHAVIOR of TFFE
+# -- Compiling entity PRIM_GJKFF
+# -- Compiling architecture BEHAVIOR of PRIM_GJKFF
+# -- Loading entity PRIM_GJKFF
+# -- Compiling entity JKFF
+# -- Compiling architecture BEHAVIOR of JKFF
+# -- Compiling entity JKFFE
+# -- Compiling architecture BEHAVIOR of JKFFE
+# -- Compiling entity PRIM_GSRFF
+# -- Compiling architecture BEHAVIOR of PRIM_GSRFF
+# -- Loading entity PRIM_GSRFF
+# -- Compiling entity SRFF
+# -- Compiling architecture BEHAVIOR of SRFF
+# -- Compiling entity SRFFE
+# -- Compiling architecture BEHAVIOR of SRFFE
+# -- Compiling entity clklock
+# -- Compiling architecture behavior of clklock
+# -- Compiling entity alt_inbuf
+# -- Compiling architecture BEHAVIOR of alt_inbuf
+# -- Compiling entity alt_outbuf
+# -- Compiling architecture BEHAVIOR of alt_outbuf
+# -- Compiling entity alt_outbuf_tri
+# -- Compiling architecture BEHAVIOR of alt_outbuf_tri
+# -- Compiling entity alt_iobuf
+# -- Compiling architecture BEHAVIOR of alt_iobuf
+# -- Compiling entity alt_inbuf_diff
+# -- Compiling architecture BEHAVIOR of alt_inbuf_diff
+# -- Compiling entity alt_outbuf_diff
+# -- Compiling architecture BEHAVIOR of alt_outbuf_diff
+# -- Compiling entity alt_outbuf_tri_diff
+# -- Compiling architecture BEHAVIOR of alt_outbuf_tri_diff
+# -- Compiling entity alt_iobuf_diff
+# -- Compiling architecture BEHAVIOR of alt_iobuf_diff
+# -- Compiling entity alt_bidir_diff
+# -- Compiling architecture BEHAVIOR of alt_bidir_diff
+# -- Compiling entity alt_bidir_buf
+# -- Compiling architecture BEHAVIOR of alt_bidir_buf
+# End time: 11:48:13 on Feb 17,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlib vhdl_libs/lpm
+# ** Warning: (vlib-34) Library already exists at "vhdl_libs/lpm".
+# Errors: 0, Warnings: 1
+# vmap lpm ./vhdl_libs/lpm
+# Questa Intel Starter FPGA Edition-64 vmap 2021.2 Lib Mapping Utility 2021.04 Apr 14 2021
+# vmap lpm ./vhdl_libs/lpm 
+# Modifying modelsim.ini
+# vcom -93 -work lpm {e:/quartus/quartus/eda/sim_lib/220pack.vhd}
+# Questa Intel Starter FPGA Edition-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 11:48:13 on Feb 17,2023
+# vcom -reportprogress 300 -93 -work lpm e:/quartus/quartus/eda/sim_lib/220pack.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package LPM_COMPONENTS
+# End time: 11:48:13 on Feb 17,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work lpm {e:/quartus/quartus/eda/sim_lib/220model.vhd}
+# Questa Intel Starter FPGA Edition-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 11:48:13 on Feb 17,2023
+# vcom -reportprogress 300 -93 -work lpm e:/quartus/quartus/eda/sim_lib/220model.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package LPM_COMMON_CONVERSION
+# -- Compiling package body LPM_COMMON_CONVERSION
+# -- Loading package LPM_COMMON_CONVERSION
+# -- Compiling package LPM_HINT_EVALUATION
+# -- Compiling package body LPM_HINT_EVALUATION
+# -- Loading package LPM_HINT_EVALUATION
+# -- Compiling package LPM_DEVICE_FAMILIES
+# -- Compiling package body LPM_DEVICE_FAMILIES
+# -- Loading package LPM_DEVICE_FAMILIES
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package LPM_COMPONENTS
+# -- Compiling entity LPM_CONSTANT
+# -- Compiling architecture LPM_SYN of LPM_CONSTANT
+# -- Compiling entity LPM_INV
+# -- Compiling architecture LPM_SYN of LPM_INV
+# -- Compiling entity lpm_and
+# -- Compiling architecture LPM_SYN of lpm_and
+# -- Compiling entity LPM_OR
+# -- Compiling architecture LPM_SYN of LPM_OR
+# -- Compiling entity LPM_XOR
+# -- Compiling architecture LPM_SYN of LPM_XOR
+# -- Compiling entity LPM_BUSTRI
+# -- Compiling architecture LPM_SYN of LPM_BUSTRI
+# -- Compiling entity LPM_MUX
+# -- Compiling architecture LPM_SYN of LPM_MUX
+# -- Compiling entity LPM_DECODE
+# -- Compiling architecture LPM_SYN of LPM_DECODE
+# -- Compiling entity LPM_CLSHIFT
+# -- Compiling architecture LPM_SYN of LPM_CLSHIFT
+# -- Loading package STD_LOGIC_SIGNED
+# -- Compiling entity LPM_ADD_SUB_SIGNED
+# -- Compiling architecture LPM_SYN of LPM_ADD_SUB_SIGNED
+# -- Compiling entity LPM_ADD_SUB_UNSIGNED
+# -- Compiling architecture LPM_SYN of LPM_ADD_SUB_UNSIGNED
+# -- Loading entity LPM_ADD_SUB_SIGNED
+# -- Loading entity LPM_ADD_SUB_UNSIGNED
+# -- Compiling entity LPM_ADD_SUB
+# -- Compiling architecture LPM_SYN of LPM_ADD_SUB
+# -- Compiling entity LPM_COMPARE_SIGNED
+# -- Compiling architecture LPM_SYN of LPM_COMPARE_SIGNED
+# -- Compiling entity LPM_COMPARE_UNSIGNED
+# -- Compiling architecture LPM_SYN of LPM_COMPARE_UNSIGNED
+# -- Loading entity LPM_COMPARE_SIGNED
+# -- Loading entity LPM_COMPARE_UNSIGNED
+# -- Compiling entity LPM_COMPARE
+# -- Compiling architecture LPM_SYN of LPM_COMPARE
+# -- Loading package LPM_HINT_EVALUATION
+# -- Compiling entity LPM_MULT
+# -- Compiling architecture LPM_SYN of LPM_MULT
+# -- Compiling entity LPM_DIVIDE
+# -- Compiling architecture behave of lpm_divide
+# -- Compiling entity lpm_abs
+# -- Compiling architecture LPM_SYN of LPM_ABS
+# -- Loading package LPM_COMMON_CONVERSION
+# -- Compiling entity LPM_COUNTER
+# -- Compiling architecture LPM_SYN of LPM_COUNTER
+# -- Compiling entity LPM_LATCH
+# -- Compiling architecture LPM_SYN of LPM_LATCH
+# -- Compiling entity LPM_FF
+# -- Compiling architecture LPM_SYN of LPM_FF
+# -- Compiling entity LPM_SHIFTREG
+# -- Compiling architecture LPM_SYN of LPM_SHIFTREG
+# -- Loading package LPM_DEVICE_FAMILIES
+# -- Compiling entity LPM_RAM_DQ
+# -- Compiling architecture LPM_SYN of lpm_ram_dq
+# -- Compiling entity LPM_RAM_DP
+# -- Compiling architecture LPM_SYN of LPM_RAM_DP
+# -- Compiling entity LPM_RAM_IO
+# -- Compiling architecture LPM_SYN of lpm_ram_io
+# -- Compiling entity LPM_ROM
+# -- Compiling architecture LPM_SYN of lpm_rom
+# -- Compiling entity LPM_FIFO
+# -- Compiling architecture behavior of LPM_FIFO
+# -- Compiling entity LPM_FIFO_DC_DFFPIPE
+# -- Compiling architecture behavior of LPM_FIFO_DC_DFFPIPE
+# -- Compiling entity LPM_FIFO_DC_FEFIFO
+# -- Compiling architecture behavior of LPM_FIFO_DC_FEFIFO
+# -- Loading entity LPM_FIFO_DC_FEFIFO
+# -- Loading entity LPM_FIFO_DC_DFFPIPE
+# -- Compiling entity LPM_FIFO_DC_ASYNC
+# -- Compiling architecture behavior of LPM_FIFO_DC_ASYNC
+# -- Loading entity LPM_FIFO_DC_ASYNC
+# -- Compiling entity LPM_FIFO_DC
+# -- Compiling architecture behavior of LPM_FIFO_DC
+# -- Compiling entity LPM_INpad
+# -- Compiling architecture LPM_SYN of LPM_INpad
+# -- Compiling entity LPM_OUTpad
+# -- Compiling architecture LPM_SYN of LPM_OUTpad
+# -- Compiling entity LPM_BIpad
+# -- Compiling architecture LPM_SYN of LPM_BIpad
+# End time: 11:48:14 on Feb 17,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# 
+# vlib vhdl_libs/sgate
+# ** Warning: (vlib-34) Library already exists at "vhdl_libs/sgate".
+# Errors: 0, Warnings: 1
+# vmap sgate ./vhdl_libs/sgate
+# Questa Intel Starter FPGA Edition-64 vmap 2021.2 Lib Mapping Utility 2021.04 Apr 14 2021
+# vmap sgate ./vhdl_libs/sgate 
+# Modifying modelsim.ini
+# vcom -93 -work sgate {e:/quartus/quartus/eda/sim_lib/sgate_pack.vhd}
+# Questa Intel Starter FPGA Edition-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 11:48:14 on Feb 17,2023
+# vcom -reportprogress 300 -93 -work sgate e:/quartus/quartus/eda/sim_lib/sgate_pack.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package sgate_pack
+# -- Compiling package body sgate_pack
+# -- Loading package sgate_pack
+# End time: 11:48:14 on Feb 17,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work sgate {e:/quartus/quartus/eda/sim_lib/sgate.vhd}
+# Questa Intel Starter FPGA Edition-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 11:48:14 on Feb 17,2023
+# vcom -reportprogress 300 -93 -work sgate e:/quartus/quartus/eda/sim_lib/sgate.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_SIGNED
+# -- Compiling entity oper_add
+# -- Compiling architecture sim_arch of oper_add
+# -- Compiling entity oper_addsub
+# -- Compiling architecture sim_arch of oper_addsub
+# -- Compiling entity mux21
+# -- Compiling architecture sim_arch of mux21
+# -- Compiling entity io_buf_tri
+# -- Compiling architecture sim_arch of io_buf_tri
+# -- Compiling entity io_buf_opdrn
+# -- Compiling architecture sim_arch of io_buf_opdrn
+# -- Compiling entity tri_bus
+# -- Compiling architecture sim_arch of tri_bus
+# -- Compiling entity oper_mult
+# -- Compiling architecture sim_arch of oper_mult
+# -- Loading package LPM_COMPONENTS
+# -- Compiling entity oper_div
+# -- Compiling architecture sim_arch of oper_div
+# -- Compiling entity oper_mod
+# -- Compiling architecture sim_arch of oper_mod
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity oper_left_shift
+# -- Compiling architecture sim_arch of oper_left_shift
+# -- Compiling entity oper_right_shift
+# -- Compiling architecture sim_arch of oper_right_shift
+# -- Compiling entity oper_rotate_left
+# -- Compiling architecture sim_arch of oper_rotate_left
+# -- Compiling entity oper_rotate_right
+# -- Compiling architecture sim_arch of oper_rotate_right
+# -- Compiling entity oper_less_than
+# -- Compiling architecture sim_arch of oper_less_than
+# -- Loading package sgate_pack
+# -- Compiling entity oper_mux
+# -- Compiling architecture sim_arch of oper_mux
+# -- Compiling entity oper_selector
+# -- Compiling architecture sim_arch of oper_selector
+# -- Compiling entity oper_prio_selector
+# -- Compiling architecture sim_arch of oper_prio_selector
+# -- Compiling entity oper_decoder
+# -- Compiling architecture sim_arch of oper_decoder
+# -- Compiling entity oper_bus_mux
+# -- Compiling architecture sim_arch of oper_bus_mux
+# -- Compiling entity oper_latch
+# -- Compiling architecture sim_arch of oper_latch
+# End time: 11:48:14 on Feb 17,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlib vhdl_libs/altera_mf
+# ** Warning: (vlib-34) Library already exists at "vhdl_libs/altera_mf".
+# Errors: 0, Warnings: 1
+# vmap altera_mf ./vhdl_libs/altera_mf
+# Questa Intel Starter FPGA Edition-64 vmap 2021.2 Lib Mapping Utility 2021.04 Apr 14 2021
+# vmap altera_mf ./vhdl_libs/altera_mf 
+# Modifying modelsim.ini
+# vcom -93 -work altera_mf {e:/quartus/quartus/eda/sim_lib/altera_mf_components.vhd}
+# Questa Intel Starter FPGA Edition-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 11:48:15 on Feb 17,2023
+# vcom -reportprogress 300 -93 -work altera_mf e:/quartus/quartus/eda/sim_lib/altera_mf_components.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package altera_mf_components
+# End time: 11:48:15 on Feb 17,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work altera_mf {e:/quartus/quartus/eda/sim_lib/altera_mf.vhd}
+# Questa Intel Starter FPGA Edition-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 11:48:15 on Feb 17,2023
+# vcom -reportprogress 300 -93 -work altera_mf e:/quartus/quartus/eda/sim_lib/altera_mf.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity LCELL
+# -- Compiling architecture BEHAVIOR of LCELL
+# -- Compiling package ALTERA_COMMON_CONVERSION
+# -- Compiling package body ALTERA_COMMON_CONVERSION
+# -- Loading package ALTERA_COMMON_CONVERSION
+# -- Compiling package ALTERA_MF_HINT_EVALUATION
+# -- Compiling package body ALTERA_MF_HINT_EVALUATION
+# -- Loading package ALTERA_MF_HINT_EVALUATION
+# -- Compiling package ALTERA_DEVICE_FAMILIES
+# -- Compiling package body ALTERA_DEVICE_FAMILIES
+# -- Loading package ALTERA_DEVICE_FAMILIES
+# -- Compiling package MF_pllpack
+# -- Compiling package body MF_pllpack
+# -- Loading package MF_pllpack
+# -- Compiling entity DFFP
+# -- Compiling architecture behave of DFFP
+# -- Compiling entity pll_iobuf
+# -- Compiling architecture BEHAVIOR of pll_iobuf
+# -- Compiling entity MF_m_cntr
+# -- Compiling architecture behave of MF_m_cntr
+# -- Compiling entity MF_n_cntr
+# -- Compiling architecture behave of MF_n_cntr
+# -- Compiling entity stx_scale_cntr
+# -- Compiling architecture behave of stx_scale_cntr
+# -- Compiling entity MF_pll_reg
+# -- Compiling architecture behave of MF_pll_reg
+# -- Loading package MF_pllpack
+# -- Loading entity MF_m_cntr
+# -- Loading entity MF_n_cntr
+# -- Loading entity stx_scale_cntr
+# -- Loading entity DFFP
+# -- Loading entity MF_pll_reg
+# -- Compiling entity MF_stratix_pll
+# -- Compiling architecture vital_pll of MF_stratix_pll
+# -- Compiling entity arm_m_cntr
+# -- Compiling architecture behave of arm_m_cntr
+# -- Compiling entity arm_n_cntr
+# -- Compiling architecture behave of arm_n_cntr
+# -- Compiling entity arm_scale_cntr
+# -- Compiling architecture behave of arm_scale_cntr
+# -- Loading entity arm_m_cntr
+# -- Loading entity arm_n_cntr
+# -- Loading entity arm_scale_cntr
+# -- Compiling entity MF_stratixii_pll
+# -- Compiling architecture vital_pll of MF_stratixii_pll
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity MF_ttn_mn_cntr
+# -- Compiling architecture behave of MF_ttn_mn_cntr
+# -- Compiling entity MF_ttn_scale_cntr
+# -- Compiling architecture behave of MF_ttn_scale_cntr
+# -- Loading entity MF_ttn_mn_cntr
+# -- Loading entity MF_ttn_scale_cntr
+# -- Compiling entity MF_stratixiii_pll
+# -- Compiling architecture vital_pll of MF_stratixiii_pll
+# -- Compiling entity MF_cda_mn_cntr
+# -- Compiling architecture behave of MF_cda_mn_cntr
+# -- Compiling entity MF_cda_scale_cntr
+# -- Compiling architecture behave of MF_cda_scale_cntr
+# -- Loading entity MF_cda_mn_cntr
+# -- Loading entity MF_cda_scale_cntr
+# -- Compiling entity MF_cycloneiii_pll
+# -- Compiling architecture vital_pll of MF_cycloneiii_pll
+# -- Compiling entity MF_stingray_mn_cntr
+# -- Compiling architecture behave of MF_stingray_mn_cntr
+# -- Compiling entity MF_stingray_post_divider
+# -- Compiling architecture behave of MF_stingray_post_divider
+# -- Compiling entity MF_stingray_scale_cntr
+# -- Compiling architecture behave of MF_stingray_scale_cntr
+# -- Loading entity MF_stingray_mn_cntr
+# -- Loading entity MF_stingray_scale_cntr
+# -- Compiling entity MF_cycloneiiigl_pll
+# -- Compiling architecture vital_pll of MF_cycloneiiigl_pll
+# -- Loading package ALTERA_DEVICE_FAMILIES
+# -- Loading entity MF_stratix_pll
+# -- Loading entity MF_stratixii_pll
+# -- Loading entity MF_stratixiii_pll
+# -- Loading entity MF_cycloneiii_pll
+# -- Loading entity MF_cycloneiiigl_pll
+# -- Loading entity pll_iobuf
+# -- Compiling entity altpll
+# -- Compiling architecture behavior of altpll
+# -- Compiling entity altaccumulate
+# -- Compiling architecture behaviour of altaccumulate
+# -- Compiling entity altmult_accum
+# -- Compiling architecture behaviour of altmult_accum
+# -- Compiling entity altmult_add
+# -- Compiling architecture behaviour of altmult_add
+# -- Loading package ALTERA_COMMON_CONVERSION
+# -- Compiling entity altfp_mult
+# -- Compiling architecture behavior of altfp_mult
+# -- Compiling entity altsqrt
+# -- Compiling architecture behavior of altsqrt
+# -- Compiling entity altclklock
+# -- Compiling architecture behavior of altclklock
+# -- Compiling entity altddio_in
+# -- Compiling architecture behave of altddio_in
+# -- Compiling entity altddio_out
+# -- Compiling architecture behave of altddio_out
+# -- Loading entity altddio_in
+# -- Loading entity altddio_out
+# -- Compiling entity altddio_bidir
+# -- Compiling architecture struct of altddio_bidir
+# -- Compiling entity stratixii_lvds_rx
+# -- Compiling architecture behavior of stratixii_lvds_rx
+# -- Compiling entity flexible_lvds_rx
+# -- Compiling architecture behavior of flexible_lvds_rx
+# -- Compiling entity stratixiii_lvds_rx_dpa
+# -- Compiling architecture behavior of stratixiii_lvds_rx_dpa
+# -- Compiling entity stratixv_local_clk_divider
+# -- Compiling architecture behavior of stratixv_local_clk_divider
+# -- Loading entity stratixiii_lvds_rx_dpa
+# -- Loading entity stratixv_local_clk_divider
+# -- Compiling entity stratixiii_lvds_rx_channel
+# -- Compiling architecture behavior of stratixiii_lvds_rx_channel
+# -- Loading entity stratixiii_lvds_rx_channel
+# -- Compiling entity stratixiii_lvds_rx
+# -- Compiling architecture behavior of stratixiii_lvds_rx
+# -- Loading entity stratixii_lvds_rx
+# -- Loading entity flexible_lvds_rx
+# -- Loading entity stratixiii_lvds_rx
+# -- Compiling entity altlvds_rx
+# -- Compiling architecture behavior of altlvds_rx
+# -- Compiling entity stratix_tx_outclk
+# -- Compiling architecture behavior of stratix_tx_outclk
+# -- Compiling entity stratixii_tx_outclk
+# -- Compiling architecture behavior of stratixii_tx_outclk
+# -- Compiling entity flexible_lvds_tx
+# -- Compiling architecture behavior of flexible_lvds_tx
+# -- Loading entity stratix_tx_outclk
+# -- Loading entity stratixii_tx_outclk
+# -- Loading entity flexible_lvds_tx
+# -- Compiling entity altlvds_tx
+# -- Compiling architecture behavior of altlvds_tx
+# -- Compiling entity altdpram
+# -- Compiling architecture behavior of altdpram
+# -- Compiling entity altsyncram
+# -- Compiling architecture translated of altsyncram
+# -- Loading entity altsyncram
+# -- Loading package ALTERA_MF_HINT_EVALUATION
+# -- Compiling entity alt3pram
+# -- Compiling architecture behavior of alt3pram
+# -- Loading package altera_mf_components
+# -- Compiling entity parallel_add
+# -- Compiling architecture behaviour of parallel_add
+# -- Compiling entity SCFIFO
+# -- Compiling architecture behavior of SCFIFO
+# -- Compiling entity DCFIFO_DFFPIPE
+# -- Compiling architecture behavior of DCFIFO_DFFPIPE
+# -- Compiling entity DCFIFO_FEFIFO
+# -- Compiling architecture behavior of DCFIFO_FEFIFO
+# -- Loading entity DCFIFO_FEFIFO
+# -- Loading entity DCFIFO_DFFPIPE
+# -- Compiling entity DCFIFO_ASYNC
+# -- Compiling architecture behavior of DCFIFO_ASYNC
+# -- Compiling entity DCFIFO_SYNC
+# -- Compiling architecture behavior of DCFIFO_SYNC
+# -- Compiling entity DCFIFO_LOW_LATENCY
+# -- Compiling architecture behavior of DCFIFO_LOW_LATENCY
+# -- Loading entity DCFIFO_ASYNC
+# -- Loading entity DCFIFO_SYNC
+# -- Loading entity DCFIFO_LOW_LATENCY
+# -- Compiling entity DCFIFO_MIXED_WIDTHS
+# -- Compiling architecture behavior of DCFIFO_MIXED_WIDTHS
+# -- Loading entity DCFIFO_MIXED_WIDTHS
+# -- Compiling entity DCFIFO
+# -- Compiling architecture behavior of DCFIFO
+# -- Compiling entity altshift_taps
+# -- Compiling architecture behavioural of altshift_taps
+# -- Compiling entity A_GRAYCOUNTER
+# -- Compiling architecture behavior of A_GRAYCOUNTER
+# -- Compiling entity altsquare
+# -- Compiling architecture altsquare_syn of altsquare
+# -- Compiling entity altera_std_synchronizer
+# -- Compiling architecture behavioral of altera_std_synchronizer
+# -- Compiling entity altera_std_synchronizer_bundle
+# -- Compiling architecture behavioral of altera_std_synchronizer_bundle
+# -- Compiling entity alt_cal
+# -- Compiling architecture RTL of alt_cal
+# -- Compiling entity alt_cal_mm
+# -- Compiling architecture RTL of alt_cal_mm
+# -- Compiling entity alt_cal_c3gxb
+# -- Compiling architecture RTL of alt_cal_c3gxb
+# -- Compiling entity alt_cal_sv
+# -- Compiling architecture RTL of alt_cal_sv
+# -- Compiling entity alt_cal_av
+# -- Compiling architecture RTL of alt_cal_av
+# -- Compiling package alt_aeq_s4_func
+# -- Compiling package body alt_aeq_s4_func
+# -- Loading package alt_aeq_s4_func
+# -- Loading package alt_aeq_s4_func
+# -- Compiling entity alt_aeq_s4
+# -- Compiling architecture trans of alt_aeq_s4
+# -- Compiling package alt_eyemon_func
+# -- Compiling package body alt_eyemon_func
+# -- Loading package alt_eyemon_func
+# -- Loading package alt_eyemon_func
+# -- Compiling entity alt_eyemon
+# -- Compiling architecture trans of alt_eyemon
+# -- Compiling package alt_dfe_func
+# -- Compiling package body alt_dfe_func
+# -- Loading package alt_dfe_func
+# -- Loading package alt_dfe_func
+# -- Compiling entity alt_dfe
+# -- Compiling architecture trans of alt_dfe
+# -- Compiling package SLD_NODE
+# -- Compiling package body SLD_NODE
+# -- Loading package SLD_NODE
+# -- Loading package SLD_NODE
+# -- Compiling entity signal_gen
+# -- Compiling architecture simModel of signal_gen
+# -- Compiling entity jtag_tap_controller
+# -- Compiling architecture FSM of jtag_tap_controller
+# -- Compiling entity dummy_hub
+# -- Compiling architecture behavior of dummy_hub
+# -- Loading entity signal_gen
+# -- Loading entity jtag_tap_controller
+# -- Loading entity dummy_hub
+# -- Compiling entity sld_virtual_jtag
+# -- Compiling architecture structural of sld_virtual_jtag
+# -- Compiling entity sld_signaltap
+# -- Compiling architecture sim_sld_signaltap of sld_signaltap
+# -- Compiling entity altstratixii_oct
+# -- Compiling architecture sim_altstratixii_oct of altstratixii_oct
+# -- Compiling entity altparallel_flash_loader
+# -- Compiling architecture sim_altparallel_flash_loader of altparallel_flash_loader
+# -- Compiling entity altserial_flash_loader
+# -- Compiling architecture sim_altserial_flash_loader of altserial_flash_loader
+# -- Compiling entity alt_fault_injection
+# -- Compiling architecture sim_alt_fault_injection of alt_fault_injection
+# -- Compiling entity sld_virtual_jtag_basic
+# -- Compiling architecture sim_sld_virtual_jtag_basic of sld_virtual_jtag_basic
+# -- Compiling entity altsource_probe
+# -- Compiling architecture sim_altsource_probe of altsource_probe
+# End time: 11:48:16 on Feb 17,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# 
+# vlib vhdl_libs/altera_lnsim
+# ** Warning: (vlib-34) Library already exists at "vhdl_libs/altera_lnsim".
+# Errors: 0, Warnings: 1
+# vmap altera_lnsim ./vhdl_libs/altera_lnsim
+# Questa Intel Starter FPGA Edition-64 vmap 2021.2 Lib Mapping Utility 2021.04 Apr 14 2021
+# vmap altera_lnsim ./vhdl_libs/altera_lnsim 
+# Modifying modelsim.ini
+# vlog -sv -work altera_lnsim {e:/quartus/quartus/eda/sim_lib/mentor/altera_lnsim_for_vhdl.sv}
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 11:48:16 on Feb 17,2023
+# vlog -reportprogress 300 -sv -work altera_lnsim e:/quartus/quartus/eda/sim_lib/mentor/altera_lnsim_for_vhdl.sv 
+# 
+# Top level modules:
+# End time: 11:48:17 on Feb 17,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -93 -work altera_lnsim {e:/quartus/quartus/eda/sim_lib/altera_lnsim_components.vhd}
+# Questa Intel Starter FPGA Edition-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 11:48:17 on Feb 17,2023
+# vcom -reportprogress 300 -93 -work altera_lnsim e:/quartus/quartus/eda/sim_lib/altera_lnsim_components.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package altera_lnsim_components
+# End time: 11:48:17 on Feb 17,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlib vhdl_libs/cyclonev
+# ** Warning: (vlib-34) Library already exists at "vhdl_libs/cyclonev".
+# Errors: 0, Warnings: 1
+# vmap cyclonev ./vhdl_libs/cyclonev
+# Questa Intel Starter FPGA Edition-64 vmap 2021.2 Lib Mapping Utility 2021.04 Apr 14 2021
+# vmap cyclonev ./vhdl_libs/cyclonev 
+# Modifying modelsim.ini
+# vlog -vlog01compat -work cyclonev {e:/quartus/quartus/eda/sim_lib/mentor/cyclonev_atoms_ncrypt.v}
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 11:48:18 on Feb 17,2023
+# vlog -reportprogress 300 -vlog01compat -work cyclonev e:/quartus/quartus/eda/sim_lib/mentor/cyclonev_atoms_ncrypt.v 
+# ** Warning: (vlog-2083) <protected>(<protected>): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) <protected>(<protected>): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) <protected>(<protected>): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) <protected>(<protected>): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) <protected>(<protected>): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) <protected>(<protected>): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) <protected>(<protected>): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) <protected>(<protected>): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) <protected>(<protected>): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) <protected>(<protected>): Carriage return (0x0D) is not followed by a newline (0x0A).
+# 
+# Top level modules:
+# End time: 11:48:20 on Feb 17,2023, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 10
+# vcom -93 -work cyclonev {e:/quartus/quartus/eda/sim_lib/cyclonev_atoms.vhd}
+# Questa Intel Starter FPGA Edition-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 11:48:20 on Feb 17,2023
+# vcom -reportprogress 300 -93 -work cyclonev e:/quartus/quartus/eda/sim_lib/cyclonev_atoms.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package VITAL_Timing
+# -- Loading package VITAL_Primitives
+# -- Compiling package cyclonev_atom_pack
+# -- Compiling package body cyclonev_atom_pack
+# -- Loading package cyclonev_atom_pack
+# -- Compiling package cyclonev_pllpack
+# -- Compiling package body cyclonev_pllpack
+# -- Loading package cyclonev_pllpack
+# -- Loading package cyclonev_atom_pack
+# -- Compiling entity cyclonev_dffe
+# -- Compiling architecture behave of cyclonev_dffe
+# -- Compiling entity cyclonev_mux21
+# -- Compiling architecture AltVITAL of cyclonev_mux21
+# -- Compiling entity cyclonev_mux41
+# -- Compiling architecture AltVITAL of cyclonev_mux41
+# -- Compiling entity cyclonev_and1
+# -- Compiling architecture AltVITAL of cyclonev_and1
+# -- Loading entity cyclonev_and1
+# -- Compiling entity cyclonev_ff
+# -- Compiling architecture vital_lcell_ff of cyclonev_ff
+# -- Loading package std_logic_arith
+# -- Compiling entity cyclonev_pseudo_diff_out
+# -- Compiling architecture arch of cyclonev_pseudo_diff_out
+# -- Compiling entity cyclonev_lcell_comb
+# -- Compiling architecture vital_lcell_comb of cyclonev_lcell_comb
+# -- Compiling entity cyclonev_routing_wire
+# ** Warning: e:/quartus/quartus/eda/sim_lib/cyclonev_atoms.vhd(2331): (vcom-1288) VITAL timing generic "tpd_datainglitch_dataout" port specification "datainglitch" does not denote a port.
+# (1076.4 section 4.3.2.1.3)
+# -- Compiling architecture behave of cyclonev_routing_wire
+# -- Loading package altera_lnsim_components
+# -- Compiling entity cyclonev_ram_block
+# -- Compiling architecture block_arch of cyclonev_ram_block
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity cyclonev_mlab_cell
+# -- Compiling architecture trans of cyclonev_mlab_cell
+# -- Compiling entity cyclonev_io_ibuf
+# -- Compiling architecture arch of cyclonev_io_ibuf
+# -- Compiling entity cyclonev_io_obuf
+# -- Compiling architecture arch of cyclonev_io_obuf
+# -- Compiling entity cyclonev_ddio_in
+# -- Compiling architecture arch of cyclonev_ddio_in
+# -- Compiling entity cyclonev_ddio_oe
+# -- Compiling architecture arch of cyclonev_ddio_oe
+# -- Compiling entity cyclonev_ddio_out
+# -- Compiling architecture arch of cyclonev_ddio_out
+# -- Compiling entity cyclonev_io_pad
+# -- Compiling architecture arch of cyclonev_io_pad
+# -- Compiling entity cyclonev_bias_logic
+# -- Compiling architecture vital_bias_logic of cyclonev_bias_logic
+# -- Compiling entity cyclonev_bias_generator
+# -- Compiling architecture vital_bias_generator of cyclonev_bias_generator
+# -- Compiling entity cyclonev_bias_block
+# -- Compiling architecture vital_bias_block of cyclonev_bias_block
+# -- Compiling entity cyclonev_clk_phase_select
+# -- Compiling architecture behavior of cyclonev_clk_phase_select
+# -- Compiling entity cyclonev_clkena
+# -- Compiling architecture behavior of cyclonev_clkena
+# -- Compiling entity cyclonev_clkselect
+# -- Compiling architecture behavior of cyclonev_clkselect
+# -- Compiling entity cyclonev_delay_chain
+# -- Compiling architecture behavior of cyclonev_delay_chain
+# -- Compiling entity cyclonev_dll_offset_ctrl
+# -- Compiling architecture behavior of cyclonev_dll_offset_ctrl
+# -- Compiling entity cyclonev_dll
+# -- Compiling architecture behavior of cyclonev_dll
+# -- Compiling entity cyclonev_dqs_config
+# -- Compiling architecture behavior of cyclonev_dqs_config
+# -- Compiling entity cyclonev_dqs_delay_chain
+# -- Compiling architecture behavior of cyclonev_dqs_delay_chain
+# -- Compiling entity cyclonev_dqs_enable_ctrl
+# -- Compiling architecture behavior of cyclonev_dqs_enable_ctrl
+# -- Compiling entity cyclonev_duty_cycle_adjustment
+# -- Compiling architecture behavior of cyclonev_duty_cycle_adjustment
+# -- Compiling entity cyclonev_fractional_pll
+# -- Compiling architecture behavior of cyclonev_fractional_pll
+# -- Compiling entity cyclonev_half_rate_input
+# -- Compiling architecture behavior of cyclonev_half_rate_input
+# -- Compiling entity cyclonev_input_phase_alignment
+# -- Compiling architecture behavior of cyclonev_input_phase_alignment
+# -- Compiling entity cyclonev_io_clock_divider
+# -- Compiling architecture behavior of cyclonev_io_clock_divider
+# -- Compiling entity cyclonev_io_config
+# -- Compiling architecture behavior of cyclonev_io_config
+# -- Compiling entity cyclonev_leveling_delay_chain
+# -- Compiling architecture behavior of cyclonev_leveling_delay_chain
+# -- Compiling entity cyclonev_mem_phy
+# -- Compiling architecture behavior of cyclonev_mem_phy
+# -- Compiling entity cyclonev_phy_clkbuf
+# -- Compiling architecture behavior of cyclonev_phy_clkbuf
+# -- Compiling entity cyclonev_output_alignment
+# -- Compiling architecture behavior of cyclonev_output_alignment
+# -- Compiling entity cyclonev_pll_dll_output
+# -- Compiling architecture behavior of cyclonev_pll_dll_output
+# -- Compiling entity cyclonev_pll_dpa_output
+# -- Compiling architecture behavior of cyclonev_pll_dpa_output
+# -- Compiling entity cyclonev_pll_extclk_output
+# -- Compiling architecture behavior of cyclonev_pll_extclk_output
+# -- Compiling entity cyclonev_pll_lvds_output
+# -- Compiling architecture behavior of cyclonev_pll_lvds_output
+# -- Compiling entity cyclonev_pll_output_counter
+# -- Compiling architecture behavior of cyclonev_pll_output_counter
+# -- Compiling entity cyclonev_pll_reconfig
+# -- Compiling architecture behavior of cyclonev_pll_reconfig
+# -- Compiling entity cyclonev_pll_refclk_select
+# -- Compiling architecture behavior of cyclonev_pll_refclk_select
+# -- Compiling entity cyclonev_termination_logic
+# -- Compiling architecture behavior of cyclonev_termination_logic
+# -- Compiling entity cyclonev_termination
+# -- Compiling architecture behavior of cyclonev_termination
+# -- Compiling entity cyclonev_asmiblock
+# -- Compiling architecture behavior of cyclonev_asmiblock
+# -- Compiling entity cyclonev_chipidblock
+# -- Compiling architecture behavior of cyclonev_chipidblock
+# -- Compiling entity cyclonev_controller
+# -- Compiling architecture behavior of cyclonev_controller
+# -- Compiling entity cyclonev_crcblock
+# -- Compiling architecture behavior of cyclonev_crcblock
+# -- Compiling entity cyclonev_jtag
+# -- Compiling architecture behavior of cyclonev_jtag
+# -- Compiling entity cyclonev_prblock
+# -- Compiling architecture behavior of cyclonev_prblock
+# -- Compiling entity cyclonev_rublock
+# -- Compiling architecture behavior of cyclonev_rublock
+# -- Compiling entity cyclonev_tsdblock
+# -- Compiling architecture behavior of cyclonev_tsdblock
+# -- Compiling entity cyclonev_read_fifo
+# -- Compiling architecture behavior of cyclonev_read_fifo
+# -- Compiling entity cyclonev_read_fifo_read_enable
+# -- Compiling architecture behavior of cyclonev_read_fifo_read_enable
+# -- Compiling entity cyclonev_mac
+# -- Compiling architecture behavior of cyclonev_mac
+# -- Compiling entity cyclonev_ir_fifo_userdes
+# -- Compiling architecture behavior of cyclonev_ir_fifo_userdes
+# -- Compiling entity cyclonev_oscillator
+# -- Compiling architecture behavior of cyclonev_oscillator
+# End time: 11:48:20 on Feb 17,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# vcom -93 -work cyclonev {e:/quartus/quartus/eda/sim_lib/cyclonev_components.vhd}
+# Questa Intel Starter FPGA Edition-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 11:48:35 on Feb 17,2023
+# vcom -reportprogress 300 -93 -work cyclonev e:/quartus/quartus/eda/sim_lib/cyclonev_components.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package VITAL_Timing
+# -- Loading package VITAL_Primitives
+# -- Loading package cyclonev_atom_pack
+# -- Compiling package cyclonev_components
+# End time: 11:48:35 on Feb 17,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlib vhdl_libs/cyclonev_hssi
+# ** Warning: (vlib-34) Library already exists at "vhdl_libs/cyclonev_hssi".
+# Errors: 0, Warnings: 1
+# vmap cyclonev_hssi ./vhdl_libs/cyclonev_hssi
+# Questa Intel Starter FPGA Edition-64 vmap 2021.2 Lib Mapping Utility 2021.04 Apr 14 2021
+# vmap cyclonev_hssi ./vhdl_libs/cyclonev_hssi 
+# Modifying modelsim.ini
+# vcom -93 -work cyclonev_hssi {e:/quartus/quartus/eda/sim_lib/cyclonev_hssi_components.vhd}
+# Questa Intel Starter FPGA Edition-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 11:48:36 on Feb 17,2023
+# vcom -reportprogress 300 -93 -work cyclonev_hssi e:/quartus/quartus/eda/sim_lib/cyclonev_hssi_components.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package CYCLONEV_HSSI_COMPONENTS
+# -- Compiling package body CYCLONEV_HSSI_COMPONENTS
+# -- Loading package CYCLONEV_HSSI_COMPONENTS
+# End time: 11:48:36 on Feb 17,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work cyclonev_hssi {e:/quartus/quartus/eda/sim_lib/mentor/cyclonev_hssi_atoms_ncrypt.v}
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 11:48:36 on Feb 17,2023
+# vlog -reportprogress 300 -vlog01compat -work cyclonev_hssi e:/quartus/quartus/eda/sim_lib/mentor/cyclonev_hssi_atoms_ncrypt.v 
+# 
+# Top level modules:
+# End time: 11:48:38 on Feb 17,2023, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 0
+# vcom -93 -work cyclonev_hssi {e:/quartus/quartus/eda/sim_lib/cyclonev_hssi_atoms.vhd}
+# Questa Intel Starter FPGA Edition-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 11:48:38 on Feb 17,2023
+# vcom -reportprogress 300 -93 -work cyclonev_hssi e:/quartus/quartus/eda/sim_lib/cyclonev_hssi_atoms.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity cyclonev_hssi_8g_pcs_aggregate
+# -- Compiling architecture behavior of cyclonev_hssi_8g_pcs_aggregate
+# -- Loading package CYCLONEV_HSSI_COMPONENTS
+# -- Compiling entity cyclonev_hssi_8g_rx_pcs
+# -- Compiling architecture behavior of cyclonev_hssi_8g_rx_pcs
+# -- Compiling entity cyclonev_hssi_8g_tx_pcs
+# -- Compiling architecture behavior of cyclonev_hssi_8g_tx_pcs
+# -- Compiling entity cyclonev_hssi_common_pcs_pma_interface
+# -- Compiling architecture behavior of cyclonev_hssi_common_pcs_pma_interface
+# -- Compiling entity cyclonev_hssi_common_pld_pcs_interface
+# -- Compiling architecture behavior of cyclonev_hssi_common_pld_pcs_interface
+# -- Compiling entity cyclonev_hssi_pipe_gen1_2
+# -- Compiling architecture behavior of cyclonev_hssi_pipe_gen1_2
+# -- Compiling entity cyclonev_hssi_pma_aux
+# -- Compiling architecture behavior of cyclonev_hssi_pma_aux
+# -- Compiling entity cyclonev_hssi_pma_int
+# -- Compiling architecture behavior of cyclonev_hssi_pma_int
+# -- Compiling entity cyclonev_hssi_pma_rx_buf
+# -- Compiling architecture behavior of cyclonev_hssi_pma_rx_buf
+# -- Compiling entity cyclonev_hssi_pma_rx_deser
+# -- Compiling architecture behavior of cyclonev_hssi_pma_rx_deser
+# -- Compiling entity cyclonev_hssi_pma_tx_buf
+# -- Compiling architecture behavior of cyclonev_hssi_pma_tx_buf
+# -- Compiling entity cyclonev_hssi_pma_tx_cgb
+# -- Compiling architecture behavior of cyclonev_hssi_pma_tx_cgb
+# -- Compiling entity cyclonev_hssi_pma_tx_ser
+# -- Compiling architecture behavior of cyclonev_hssi_pma_tx_ser
+# -- Compiling entity cyclonev_hssi_pma_cdr_refclk_select_mux
+# -- Compiling architecture behavior of cyclonev_hssi_pma_cdr_refclk_select_mux
+# -- Compiling entity cyclonev_hssi_rx_pcs_pma_interface
+# -- Compiling architecture behavior of cyclonev_hssi_rx_pcs_pma_interface
+# -- Compiling entity cyclonev_hssi_rx_pld_pcs_interface
+# -- Compiling architecture behavior of cyclonev_hssi_rx_pld_pcs_interface
+# -- Compiling entity cyclonev_hssi_tx_pcs_pma_interface
+# -- Compiling architecture behavior of cyclonev_hssi_tx_pcs_pma_interface
+# -- Compiling entity cyclonev_hssi_tx_pld_pcs_interface
+# -- Compiling architecture behavior of cyclonev_hssi_tx_pld_pcs_interface
+# -- Compiling entity cyclonev_hssi_refclk_divider
+# -- Compiling architecture behavior of cyclonev_hssi_refclk_divider
+# -- Compiling entity cyclonev_pll_aux
+# -- Compiling architecture behavior of cyclonev_pll_aux
+# -- Compiling entity cyclonev_channel_pll
+# -- Compiling architecture behavior of cyclonev_channel_pll
+# -- Compiling entity cyclonev_hssi_avmm_interface
+# -- Compiling architecture behavior of cyclonev_hssi_avmm_interface
+# -- Compiling entity cyclonev_hssi_pma_hi_pmaif
+# -- Compiling architecture behavior of cyclonev_hssi_pma_hi_pmaif
+# -- Compiling entity cyclonev_hssi_pma_hi_xcvrif
+# -- Compiling architecture behavior of cyclonev_hssi_pma_hi_xcvrif
+# End time: 11:48:38 on Feb 17,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# ** Warning: (vdel-134) Unable to remove locked optimized design "_opt".  Locker is ASUS@LAPTOP-F1LQ39UM.
+# vlib rtl_work
+# ** Warning: (vlib-34) Library already exists at "rtl_work".
+# Errors: 0, Warnings: 1
+# vmap work rtl_work
+# Questa Intel Starter FPGA Edition-64 vmap 2021.2 Lib Mapping Utility 2021.04 Apr 14 2021
+# vmap work rtl_work 
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {D:/Uni/Academic Semester 5/ECE 5500 Digital systems/Lab 2/FullAdder.vhd}
+# Questa Intel Starter FPGA Edition-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 11:48:39 on Feb 17,2023
+# vcom -reportprogress 300 -93 -work work D:/Uni/Academic Semester 5/ECE 5500 Digital systems/Lab 2/FullAdder.vhd 
+# -- Loading package STANDARD
+# -- Compiling entity FullAdder
+# -- Compiling architecture Equations of FullAdder
+# End time: 11:48:39 on Feb 17,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {D:/Uni/Academic Semester 5/ECE 5500 Digital systems/Lab 2/FullAdder_And_Subtractor_8bit.vhd}
+# Questa Intel Starter FPGA Edition-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 11:48:39 on Feb 17,2023
+# vcom -reportprogress 300 -93 -work work D:/Uni/Academic Semester 5/ECE 5500 Digital systems/Lab 2/FullAdder_And_Subtractor_8bit.vhd 
+# -- Loading package STANDARD
+# -- Compiling entity AddSub8
+# -- Compiling architecture Structure of AddSub8
+# ** Error: D:/Uni/Academic Semester 5/ECE 5500 Digital systems/Lab 2/FullAdder_And_Subtractor_8bit.vhd(15): (vcom-1436) Actual expression (infix expression) of formal "Y" is not globally static.
+# ** Error: D:/Uni/Academic Semester 5/ECE 5500 Digital systems/Lab 2/FullAdder_And_Subtractor_8bit.vhd(16): (vcom-1436) Actual expression (infix expression) of formal "Y" is not globally static.
+# ** Error: D:/Uni/Academic Semester 5/ECE 5500 Digital systems/Lab 2/FullAdder_And_Subtractor_8bit.vhd(17): (vcom-1436) Actual expression (infix expression) of formal "Y" is not globally static.
+# ** Error: D:/Uni/Academic Semester 5/ECE 5500 Digital systems/Lab 2/FullAdder_And_Subtractor_8bit.vhd(18): (vcom-1436) Actual expression (infix expression) of formal "Y" is not globally static.
+# ** Error: D:/Uni/Academic Semester 5/ECE 5500 Digital systems/Lab 2/FullAdder_And_Subtractor_8bit.vhd(19): (vcom-1436) Actual expression (infix expression) of formal "Y" is not globally static.
+# ** Error: D:/Uni/Academic Semester 5/ECE 5500 Digital systems/Lab 2/FullAdder_And_Subtractor_8bit.vhd(20): (vcom-1436) Actual expression (infix expression) of formal "Y" is not globally static.
+# ** Error: D:/Uni/Academic Semester 5/ECE 5500 Digital systems/Lab 2/FullAdder_And_Subtractor_8bit.vhd(21): (vcom-1436) Actual expression (infix expression) of formal "Y" is not globally static.
+# ** Error: D:/Uni/Academic Semester 5/ECE 5500 Digital systems/Lab 2/FullAdder_And_Subtractor_8bit.vhd(22): (vcom-1436) Actual expression (infix expression) of formal "Y" is not globally static.
+# ** Note: D:/Uni/Academic Semester 5/ECE 5500 Digital systems/Lab 2/FullAdder_And_Subtractor_8bit.vhd(23): VHDL Compiler exiting
+# End time: 11:48:39 on Feb 17,2023, Elapsed time: 0:00:00
+# Errors: 8, Warnings: 0
+# ** Error: E:/Quartus/questa_fse/win64/vcom failed.
+# Error in macro ./Lab_2_ALU_run_msim_rtl_vhdl.do line 54
+# E:/Quartus/questa_fse/win64/vcom failed.
+#     while executing
+# "vcom -93 -work work {D:/Uni/Academic Semester 5/ECE 5500 Digital systems/Lab 2/FullAdder_And_Subtractor_8bit.vhd}"
+vcom -reportprogress 300 -work work {D:/Uni/Academic Semester 5/ECE 5500 Digital systems/Lab 2/ALU.vhd}
+# Questa Intel Starter FPGA Edition-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 11:49:00 on Feb 17,2023
+# vcom -reportprogress 300 -work work D:/Uni/Academic Semester 5/ECE 5500 Digital systems/Lab 2/ALU.vhd 
+# -- Loading package STANDARD
+# -- Compiling entity ALU
+# -- Compiling architecture Structure of ALU
+# End time: 11:49:01 on Feb 17,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {D:/Uni/Academic Semester 5/ECE 5500 Digital systems/Lab 2/FullAdder.vhd}
+# Questa Intel Starter FPGA Edition-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 11:49:01 on Feb 17,2023
+# vcom -reportprogress 300 -work work D:/Uni/Academic Semester 5/ECE 5500 Digital systems/Lab 2/FullAdder.vhd 
+# -- Loading package STANDARD
+# -- Compiling entity FullAdder
+# -- Compiling architecture Equations of FullAdder
+# End time: 11:49:01 on Feb 17,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {D:/Uni/Academic Semester 5/ECE 5500 Digital systems/Lab 2/FullAdder_And_Subtractor_8bit.vhd}
+# Questa Intel Starter FPGA Edition-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 11:49:01 on Feb 17,2023
+# vcom -reportprogress 300 -work work D:/Uni/Academic Semester 5/ECE 5500 Digital systems/Lab 2/FullAdder_And_Subtractor_8bit.vhd 
+# -- Loading package STANDARD
+# -- Compiling entity AddSub8
+# -- Compiling architecture Structure of AddSub8
+# ** Error: D:/Uni/Academic Semester 5/ECE 5500 Digital systems/Lab 2/FullAdder_And_Subtractor_8bit.vhd(15): (vcom-1436) Actual expression (infix expression) of formal "Y" is not globally static.
+# ** Error: D:/Uni/Academic Semester 5/ECE 5500 Digital systems/Lab 2/FullAdder_And_Subtractor_8bit.vhd(16): (vcom-1436) Actual expression (infix expression) of formal "Y" is not globally static.
+# ** Error: D:/Uni/Academic Semester 5/ECE 5500 Digital systems/Lab 2/FullAdder_And_Subtractor_8bit.vhd(17): (vcom-1436) Actual expression (infix expression) of formal "Y" is not globally static.
+# ** Error: D:/Uni/Academic Semester 5/ECE 5500 Digital systems/Lab 2/FullAdder_And_Subtractor_8bit.vhd(18): (vcom-1436) Actual expression (infix expression) of formal "Y" is not globally static.
+# ** Error: D:/Uni/Academic Semester 5/ECE 5500 Digital systems/Lab 2/FullAdder_And_Subtractor_8bit.vhd(19): (vcom-1436) Actual expression (infix expression) of formal "Y" is not globally static.
+# ** Error: D:/Uni/Academic Semester 5/ECE 5500 Digital systems/Lab 2/FullAdder_And_Subtractor_8bit.vhd(20): (vcom-1436) Actual expression (infix expression) of formal "Y" is not globally static.
+# ** Error: D:/Uni/Academic Semester 5/ECE 5500 Digital systems/Lab 2/FullAdder_And_Subtractor_8bit.vhd(21): (vcom-1436) Actual expression (infix expression) of formal "Y" is not globally static.
+# ** Error: D:/Uni/Academic Semester 5/ECE 5500 Digital systems/Lab 2/FullAdder_And_Subtractor_8bit.vhd(22): (vcom-1436) Actual expression (infix expression) of formal "Y" is not globally static.
+# ** Note: D:/Uni/Academic Semester 5/ECE 5500 Digital systems/Lab 2/FullAdder_And_Subtractor_8bit.vhd(23): VHDL Compiler exiting
+# End time: 11:49:01 on Feb 17,2023, Elapsed time: 0:00:00
+# Errors: 8, Warnings: 0
+vcom -reportprogress 300 -work work {D:/Uni/Academic Semester 5/ECE 5500 Digital systems/Lab 2/Lab_2_ALU.vhd}
+# Questa Intel Starter FPGA Edition-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 11:49:01 on Feb 17,2023
+# vcom -reportprogress 300 -work work D:/Uni/Academic Semester 5/ECE 5500 Digital systems/Lab 2/Lab_2_ALU.vhd 
+# -- Loading package STANDARD
+# ** Error (suppressible): D:/Uni/Academic Semester 5/ECE 5500 Digital systems/Lab 2/Lab_2_ALU.vhd(1): (vcom-1491) Empty source files.
+# End time: 11:49:01 on Feb 17,2023, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vcom -reportprogress 300 -work work {D:/Uni/Academic Semester 5/ECE 5500 Digital systems/Lab 2/MUX.vhd}
+# Questa Intel Starter FPGA Edition-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 11:49:01 on Feb 17,2023
+# vcom -reportprogress 300 -work work D:/Uni/Academic Semester 5/ECE 5500 Digital systems/Lab 2/MUX.vhd 
+# -- Loading package STANDARD
+# -- Compiling entity mux4
+# -- Compiling architecture Structure of mux4
+# End time: 11:49:01 on Feb 17,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.alu
+# vsim work.alu 
+# Start time: 11:49:07 on Feb 17,2023
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: D:/Uni/Academic Semester 5/ECE 5500 Digital systems/Lab 2/ALU.vhd(36): (vopt-1447) Instance "AddSub81" is bound to entity "work.addsub8" that has no architectures.
+# ** Warning: D:/Uni/Academic Semester 5/ECE 5500 Digital systems/Lab 2/ALU.vhd(36): (vopt-3473) Component instance "AddSub81 : AddSub8" is not bound.
+#         Region: /ALU
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
+# Loading std.standard
+# Loading work.alu(structure)#1
+# ** Error: (vsim-3173) Entity 'D:/Uni/Academic Semester 5/ECE 5500 Digital systems/Lab 2/simulation/questa/rtl_work.addsub8' has no architecture.
+# Load interrupted
+# Error loading design
+# End time: 11:49:09 on Feb 17,2023, Elapsed time: 0:00:02
+# Errors: 1, Warnings: 2
+vsim work.alu
+# vsim work.alu 
+# Start time: 11:49:12 on Feb 17,2023
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# Loading std.standard
+# Loading work.alu(structure)#1
+# ** Error: (vsim-3173) Entity 'D:/Uni/Academic Semester 5/ECE 5500 Digital systems/Lab 2/simulation/questa/rtl_work.addsub8' has no architecture.
+# Load interrupted
+# Error loading design
+# End time: 11:49:12 on Feb 17,2023, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vsim -voptargs=+acc work.alu
+# vsim -voptargs="+acc" work.alu 
+# Start time: 11:49:16 on Feb 17,2023
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: D:/Uni/Academic Semester 5/ECE 5500 Digital systems/Lab 2/ALU.vhd(36): (vopt-1447) Instance "AddSub81" is bound to entity "work.addsub8" that has no architectures.
+# ** Warning: D:/Uni/Academic Semester 5/ECE 5500 Digital systems/Lab 2/ALU.vhd(36): (vopt-3473) Component instance "AddSub81 : AddSub8" is not bound.
+#         Region: /ALU
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
+# Loading std.standard
+# Loading work.alu(structure)#1
+# ** Error: (vsim-3173) Entity 'D:/Uni/Academic Semester 5/ECE 5500 Digital systems/Lab 2/simulation/questa/rtl_work.addsub8' has no architecture.
+# Load interrupted
+# Error loading design
+# End time: 11:49:17 on Feb 17,2023, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 2
+vsim -voptargs=+acc work.alu(structure)
+# vsim -voptargs="+acc" work.alu(structure) 
+# Start time: 11:49:19 on Feb 17,2023
+# ** Note: (vsim-8009) Loading existing optimized design _opt2
+# Loading std.standard
+# Loading work.alu(structure)#1
+# ** Error: (vsim-3173) Entity 'D:/Uni/Academic Semester 5/ECE 5500 Digital systems/Lab 2/simulation/questa/rtl_work.addsub8' has no architecture.
+# Load interrupted
+# Error loading design
+# End time: 11:49:20 on Feb 17,2023, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 0
+vsim work.alu(structure)
+# vsim work.alu(structure) 
+# Start time: 11:49:29 on Feb 17,2023
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# Loading std.standard
+# Loading work.alu(structure)#1
+# ** Error: (vsim-3173) Entity 'D:/Uni/Academic Semester 5/ECE 5500 Digital systems/Lab 2/simulation/questa/rtl_work.addsub8' has no architecture.
+# Load interrupted
+# Error loading design
+# End time: 11:49:29 on Feb 17,2023, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vsim work.alu
+# vsim work.alu 
+# Start time: 11:49:30 on Feb 17,2023
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# Loading std.standard
+# Loading work.alu(structure)#1
+# ** Error: (vsim-3173) Entity 'D:/Uni/Academic Semester 5/ECE 5500 Digital systems/Lab 2/simulation/questa/rtl_work.addsub8' has no architecture.
+# Load interrupted
+# Error loading design
+# End time: 11:49:31 on Feb 17,2023, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 0
+vsim -voptargs=+acc work.fulladder
+# vsim -voptargs="+acc" work.fulladder 
+# Start time: 11:49:44 on Feb 17,2023
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading std.standard
+# Loading work.fulladder(equations)#1
+vsim -voptargs=+acc work.alu
+# End time: 11:50:05 on Feb 17,2023, Elapsed time: 0:00:21
+# Errors: 0, Warnings: 0
+# vsim -voptargs="+acc" work.alu 
+# Start time: 11:50:05 on Feb 17,2023
+# ** Note: (vsim-8009) Loading existing optimized design _opt2
+# Loading std.standard
+# Loading work.alu(structure)#1
+# ** Error: (vsim-3173) Entity 'D:/Uni/Academic Semester 5/ECE 5500 Digital systems/Lab 2/simulation/questa/rtl_work.addsub8' has no architecture.
+# Load interrupted
+# Error loading design
+# End time: 11:50:05 on Feb 17,2023, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vsim -voptargs=+acc work.alu
+# vsim -voptargs="+acc" work.alu 
+# Start time: 11:50:10 on Feb 17,2023
+# ** Note: (vsim-8009) Loading existing optimized design _opt2
+# Loading std.standard
+# Loading work.alu(structure)#1
+# ** Error: (vsim-3173) Entity 'D:/Uni/Academic Semester 5/ECE 5500 Digital systems/Lab 2/simulation/questa/rtl_work.addsub8' has no architecture.
+# Load interrupted
+# Error loading design
+# End time: 11:50:10 on Feb 17,2023, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vsim work.addsub8
+# vsim work.addsub8 
+# Start time: 11:50:26 on Feb 17,2023
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Error: (vopt-13130) Failed to find design unit addsub8.
+#         Searched libraries:
+#             work
+# Optimization failed
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=1, Warnings=0.
+# Error loading design
+# End time: 11:50:27 on Feb 17,2023, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 0
+vsim -voptargs=+acc work.alu
+# vsim -voptargs="+acc" work.alu 
+# Start time: 11:51:40 on Feb 17,2023
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: D:/Uni/Academic Semester 5/ECE 5500 Digital systems/Lab 2/ALU.vhd(36): (vopt-1447) Instance "AddSub81" is bound to entity "work.addsub8" that has no architectures.
+# ** Warning: D:/Uni/Academic Semester 5/ECE 5500 Digital systems/Lab 2/ALU.vhd(36): (vopt-3473) Component instance "AddSub81 : AddSub8" is not bound.
+#         Region: /ALU
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
+# Loading std.standard
+# Loading work.alu(structure)#1
+# ** Error: (vsim-3173) Entity 'D:/Uni/Academic Semester 5/ECE 5500 Digital systems/Lab 2/simulation/questa/rtl_work.addsub8' has no architecture.
+# Load interrupted
+# Error loading design
+# End time: 11:51:41 on Feb 17,2023, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 2
+vsim -vopt work.alu
+# vsim -vopt work.alu 
+# Start time: 11:51:44 on Feb 17,2023
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: D:/Uni/Academic Semester 5/ECE 5500 Digital systems/Lab 2/ALU.vhd(36): (vopt-1447) Instance "AddSub81" is bound to entity "work.addsub8" that has no architectures.
+# ** Warning: D:/Uni/Academic Semester 5/ECE 5500 Digital systems/Lab 2/ALU.vhd(36): (vopt-3473) Component instance "AddSub81 : AddSub8" is not bound.
+#         Region: /ALU
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
+# Loading std.standard
+# Loading work.alu(structure)#1
+# ** Error: (vsim-3173) Entity 'D:/Uni/Academic Semester 5/ECE 5500 Digital systems/Lab 2/simulation/questa/rtl_work.addsub8' has no architecture.
+# Load interrupted
+# Error loading design
+# End time: 11:51:46 on Feb 17,2023, Elapsed time: 0:00:02
+# Errors: 1, Warnings: 2

@@ -1,0 +1,24 @@
+Info: Start Nativelink Simulation process
+Info: NativeLink has detected VHDL design -- VHDL simulation models will be used
+
+========= EDA Simulation Settings =====================
+
+Sim Mode              :  RTL
+Family                :  cyclonev
+Quartus root          :  e:/quartus/quartus/bin64/
+Quartus sim root      :  e:/quartus/quartus/eda/sim_lib
+Simulation Tool       :  questasim
+Simulation Language   :  vhdl
+Version               :  93
+Simulation Mode       :  GUI
+Sim Output File       :  
+Sim SDF file          :  
+Sim dir               :  simulation\questa
+
+=======================================================
+
+Info: Starting NativeLink simulation with Questasim software
+Sourced NativeLink script e:/quartus/quartus/common/tcl/internal/nativelink/modelsim.tcl
+Warning: File Lab_2_ALU_run_msim_rtl_vhdl.do already exists - backing up current file as Lab_2_ALU_run_msim_rtl_vhdl.do.bak3
+Info: Spawning QuestaSim Simulation software 
+Info: NativeLink simulation flow was successful
