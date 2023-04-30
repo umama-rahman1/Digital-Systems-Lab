@@ -1,0 +1,27 @@
+library ieee;
+use ieee.std_logic_1164.all;
+entity StateMachine is
+	port(X, CLK : in std_logic; state: out std_logic_vector(1 downto 0);
+		  Y: out std_logic);
+end StateMachine;
+
+architecture structural of StateMachine is
+
+	component JK_FlipFlop is
+		port (PRN, CLRN, J, K, CLK: in std_logic;
+				Q, QN: out std_logic);
+	end component;
+
+	signal D1, D2, Q1,Q2, QX: std_logic;
+	begin	
+		D1 <= Q2;
+		D2 <= ((X and (Q1 XOR Q2)) OR ( not X and ( Q1 XNOR Q2)));
+
+		JKFF1: JK_FF port map ('1', '1', D1, not D1, CLK, Q1, QX);
+		
+		JKFF2: JK_FF port map ('1', '1', D2, not D2 , CLK, Q2, QX);
+	
+		state <= Q1 & Q2;
+		Y <= ((X XOR Q1) XOR Q2);
+
+end structural;

@@ -1,0 +1,34 @@
+|StateMachine
+PRN => JK_FlipFlop:JKFF1.PRN
+PRN => JK_FlipFlop:JKFF2.PRN
+CLRN => JK_FlipFlop:JKFF1.CLRN
+CLRN => JK_FlipFlop:JKFF2.CLRN
+CLK => JK_FlipFlop:JKFF1.CLK
+CLK => JK_FlipFlop:JKFF2.CLK
+state[0] <= JK_FlipFlop:JKFF2.Q
+state[1] <= JK_FlipFlop:JKFF1.Q
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|StateMachine|JK_FlipFlop:JKFF1
+PRN => Qtemp.IN0
+CLRN => Qtemp.IN1
+CLRN => Qtemp.ACLR
+J => Qtemp.IN1
+K => Qtemp.IN1
+CLK => Qtemp.CLK
+Q <= Qtemp.DB_MAX_OUTPUT_PORT_TYPE
+QN <= Qtemp.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|StateMachine|JK_FlipFlop:JKFF2
+PRN => Qtemp.IN0
+CLRN => Qtemp.IN1
+CLRN => Qtemp.ACLR
+J => Qtemp.IN1
+K => Qtemp.IN1
+CLK => Qtemp.CLK
+Q <= Qtemp.DB_MAX_OUTPUT_PORT_TYPE
+QN <= Qtemp.DB_MAX_OUTPUT_PORT_TYPE
+
+
