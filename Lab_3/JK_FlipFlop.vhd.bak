@@ -1,0 +1,31 @@
+library IEEE;
+use IEEE.std_logic_1164.all;
+
+entity JK_FlipFlop is
+	port (PRN, CLRN, J, K, CLK: in std_logic;
+			Q, QN: out std_logic);
+end JK_FlipFlop;
+
+architecture behavioral of JK_FlipFlop is
+	signal Qint, Qintbar: std_logic;
+begin
+	Q <= Qint;
+	QN <= not Qint;
+	
+	process(PRN, CLRN, CLK)
+	begin
+		if PRN='0' and CLRN='0' then
+			Qint<='1';
+			Qintbar<='1';
+		elsif PRN='1' and CLRN='0' then
+			Qint<='0';
+			Qintbar<='1';
+		elsif PRN='0' and CLRN='1' then
+			Qint<='1';
+			Qintbar<='0';
+		elsif CLK'event and CLK='1' then
+			Qint <= (J and not Qint) or (not K and Qint);
+			Qintbar <= not ((J and not Qint) or (not K and Qint));
+		end if;
+	end process;
+end behavior;
