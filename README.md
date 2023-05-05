@@ -1,5 +1,5 @@
 # Digital-Systems-Lab
-This is a repository for the ECE-5500 Digital Systems course Lab component for Winter of 2023
+This is a repository for the ECE-5500 Digital Systems course Lab component for Winter of 2023 in Memorial University of Newfoundland and Labrador.
 
 The lab was done in VHDL using Intel Questa FPGA
 
