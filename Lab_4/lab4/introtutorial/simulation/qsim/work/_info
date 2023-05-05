@@ -1,0 +1,115 @@
+m255
+K4
+z2
+!s99 nomlopt
+!s11e vcom 2021.2 2021.04, Apr 14 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/Uni/Academic Semester 5/ECE 5500 Digital systems/lab4/introtutorial/simulation/qsim
+T_opt
+!s110 1678371002
+VWnCib4af=ZWlz7=<^^K0B1
+04 17 10 work light_vhd_vec_tst light_arch 1
+=1-7cb27de2b4ef-6409e8b9-36d-578
+!s124 OEM10U2 
+o-quiet -auto_acc_if_foreign -work work -L cyclonev -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim
+tCvgOpt 0
+n@_opt
+OL;O;2021.2;73
+R0
+Elight
+Z1 w1678371384
+Z2 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+Z3 DPx8 cyclonev 18 cyclonev_atom_pack 0 22 ]n^KQ6M?Rfm1B1oW9AF1K0
+Z4 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+Z5 DPx8 cyclonev 19 cyclonev_components 0 22 866KB=;174aDa`;9S2n@?1
+Z6 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z7 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+Z8 DPx12 altera_lnsim 23 altera_lnsim_components 0 22 OQbOI4oZi49H@@Ik@CUZV2
+!i122 6
+R0
+Z9 8light.vho
+Z10 Flight.vho
+l0
+L37 1
+Vec?<FjS:OchaUC1F4o?]H3
+!s100 5Xb67UF1:YS>Mhf=]PRo<2
+Z11 OL;C;2021.2;73
+32
+Z12 !s110 1678371385
+!i10b 1
+Z13 !s108 1678371385.000000
+Z14 !s90 -work|work|light.vho|
+Z15 !s107 light.vho|
+!i113 0
+Z16 o-work work
+Z17 tExplicit 1 CvgOpt 0
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+DEx4 work 5 light 0 22 ec?<FjS:OchaUC1F4o?]H3
+!i122 6
+l71
+L51 94
+Vk]fMaEZVVS8C[l?dQb:U23
+!s100 d9Cdzg56OQ>Q;:eY7m48U3
+R11
+32
+R12
+!i10b 1
+R13
+R14
+R15
+!i113 0
+R16
+R17
+Elight_vhd_vec_tst
+Z18 w1678371383
+R6
+R7
+!i122 7
+R0
+Z19 8Waveform.vwf.vht
+Z20 FWaveform.vwf.vht
+l0
+L32 1
+VJj>mnjWhlh5GfgQX8o6D`0
+!s100 R;dXgVCSL[igUPD3gh88F3
+R11
+32
+R12
+!i10b 1
+R13
+Z21 !s90 -work|work|Waveform.vwf.vht|
+Z22 !s107 Waveform.vwf.vht|
+!i113 0
+R16
+R17
+Alight_arch
+R6
+R7
+Z23 DEx4 work 17 light_vhd_vec_tst 0 22 Jj>mnjWhlh5GfgQX8o6D`0
+!i122 7
+l47
+Z24 L34 46
+Z25 V3:h4GdhbSa]G?6L?USm?L0
+Z26 !s100 a^i03PSUnHT`aT=L<ea8i0
+R11
+32
+R12
+!i10b 1
+R13
+R21
+R22
+!i113 0
+R16
+R17
