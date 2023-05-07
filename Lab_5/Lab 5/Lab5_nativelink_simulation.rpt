@@ -1,0 +1,22 @@
+Info: Start Nativelink Simulation process
+
+========= EDA Simulation Settings =====================
+
+Sim Mode              :  Gate
+Family                :  cyclonev
+Quartus root          :  e:/quartus/quartus/bin64/
+Quartus sim root      :  e:/quartus/quartus/eda/sim_lib
+Simulation Tool       :  questasim
+Simulation Language   :  vhdl
+Version               :  93
+Simulation Mode       :  GUI
+Sim Output File       :  Lab5.vho
+Sim SDF file          :  Lab5__vhdl.sdo
+Sim dir               :  simulation\questa
+
+=======================================================
+
+Info: Starting NativeLink simulation with Questasim software
+Sourced NativeLink script e:/quartus/quartus/common/tcl/internal/nativelink/modelsim.tcl
+Info: Spawning QuestaSim Simulation software 
+Info: NativeLink simulation flow was successful
