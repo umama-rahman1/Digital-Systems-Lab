@@ -1,0 +1,66 @@
+m255
+K4
+z2
+!s11e vcom 2021.2 2021.04, Apr 14 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/Uni/Academic Semester 5/ECE 5500 Digital systems/Lab 5/simulation/questa
+Edemo_display
+Z1 w1680145020
+Z2 DPx8 cyclonev 18 cyclonev_atom_pack 0 22 ^Q<I4_d=;6U7ZlPZM8]Vi3
+Z3 DPx8 cyclonev 19 cyclonev_components 0 22 2D6AGAL3C<_1Ve5@klln?0
+Z4 DPx12 altera_lnsim 23 altera_lnsim_components 0 22 j2UP9CC=Y_B?SOL73A]P;2
+Z5 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+Z6 DPx6 altera 11 dffeas_pack 0 22 ZQ]VGMHaJ[GMZ@f@b6[AU2
+Z7 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+Z8 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z9 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+Z10 DPx6 altera 28 altera_primitives_components 0 22 18Ti78zfmJ`i`agjOM[]Q2
+!i122 0
+R0
+Z11 8Lab5.vho
+Z12 FLab5.vho
+l0
+L39 1
+Vn9j[gTcnURJ1KM`?FYN6G3
+!s100 fL@]fZ0@oiH5@Zm4feYhc3
+Z13 OL;C;2021.2;73
+31
+Z14 !s110 1680146305
+!i10b 1
+Z15 !s108 1680146305.000000
+Z16 !s90 -reportprogress|300|-93|-work|work|Lab5.vho|
+!s107 Lab5.vho|
+!i113 0
+Z17 o-93 -work work
+Z18 tExplicit 1 CvgOpt 0
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+R9
+R10
+DEx4 work 12 demo_display 0 22 n9j[gTcnURJ1KM`?FYN6G3
+!i122 0
+l87
+L64 253
+VblY=feFUaLgh1fT4A20M:0
+!s100 HTliK[6;09TT;aHjcHTc02
+R13
+31
+R14
+!i10b 1
+R15
+R16
+Z19 !s107 Lab5.vho|
+!i113 0
+R17
+R18

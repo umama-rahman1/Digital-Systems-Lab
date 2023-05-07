@@ -1,0 +1,147 @@
+m255
+K4
+z2
+!s99 nomlopt
+!s11e vcom 2021.2 2021.04, Apr 14 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/Uni/Academic Semester 5/ECE 5500 Digital systems/Lab 5/simulation/questa
+T_opt
+!s110 1680145871
+VIOdS1oA6hV3W=hO4zKHB20
+04 12 3 work demo_display top 1
+=1-7cb27de2b4ef-6424fdcf-27c-3538
+!s124 OEM10U4 
+o-quiet -auto_acc_if_foreign -work work
+tCvgOpt 0
+n@_opt
+OL;O;2021.2;73
+Ecounter20bit
+Z1 w1680141971
+Z2 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 0
+R0
+Z5 8D:/Uni/Academic Semester 5/ECE 5500 Digital systems/Lab 5/components.vhd
+Z6 FD:/Uni/Academic Semester 5/ECE 5500 Digital systems/Lab 5/components.vhd
+l0
+L5 1
+VaN>2oU_^aDcKP5>`Lz@=G0
+!s100 YN:o2iaV<_Rn:Yl<lGE[G1
+Z7 OL;C;2021.2;73
+31
+Z8 !s110 1680145861
+!i10b 1
+Z9 !s108 1680145860.000000
+Z10 !s90 -reportprogress|300|-93|-work|work|D:/Uni/Academic Semester 5/ECE 5500 Digital systems/Lab 5/components.vhd|
+Z11 !s107 D:/Uni/Academic Semester 5/ECE 5500 Digital systems/Lab 5/components.vhd|
+!i113 0
+Z12 o-93 -work work
+Z13 tExplicit 1 CvgOpt 0
+Artl
+R2
+R3
+R4
+DEx4 work 12 counter20bit 0 22 aN>2oU_^aDcKP5>`Lz@=G0
+!i122 0
+l13
+L11 17
+V>4kSX:[G^EH1_DURBO^V:3
+!s100 9KSD8_lRSmLzYf]MJHA0T2
+R7
+31
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 0
+R12
+R13
+Edemo_display
+Z14 w1680145826
+R3
+R4
+!i122 1
+R0
+Z15 8D:/Uni/Academic Semester 5/ECE 5500 Digital systems/Lab 5/demo_display.vhd
+Z16 FD:/Uni/Academic Semester 5/ECE 5500 Digital systems/Lab 5/demo_display.vhd
+l0
+L4 1
+V03;1dTZ[Nd1W@kF>O8OUR3
+!s100 zjH4WbH[BZR9HXm;A1hU53
+R7
+31
+R8
+!i10b 1
+Z17 !s108 1680145861.000000
+Z18 !s90 -reportprogress|300|-93|-work|work|D:/Uni/Academic Semester 5/ECE 5500 Digital systems/Lab 5/demo_display.vhd|
+Z19 !s107 D:/Uni/Academic Semester 5/ECE 5500 Digital systems/Lab 5/demo_display.vhd|
+!i113 0
+R12
+R13
+Atop
+R3
+R4
+DEx4 work 12 demo_display 0 22 03;1dTZ[Nd1W@kF>O8OUR3
+!i122 1
+l32
+L9 98
+V5AADXcIS5HH_KUl=XkO]a0
+!s100 ^jk=3@FL;kc4HGY^kF:Hd1
+R7
+31
+R8
+!i10b 1
+R17
+R18
+R19
+!i113 0
+R12
+R13
+Eshiftreg10bit
+R1
+R3
+R4
+!i122 0
+R0
+R5
+R6
+l0
+L32 1
+VHH79kzX=60U?_nj02VTWN0
+!s100 WB?Nc51<jPD6I04]ommU62
+R7
+31
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 0
+R12
+R13
+Artl
+R3
+R4
+DEx4 work 13 shiftreg10bit 0 22 HH79kzX=60U?_nj02VTWN0
+!i122 0
+l41
+L38 20
+VOzmEz=jU9^LejXZQ925V`0
+!s100 ^k1imV:8TF]oFRD9<>dj^1
+R7
+31
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 0
+R12
+R13
