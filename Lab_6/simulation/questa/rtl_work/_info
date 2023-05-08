@@ -1,0 +1,330 @@
+m255
+K4
+z2
+Z0 !s99 nomlopt
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+!s11e vcom 2021.2 2021.04, Apr 14 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 dD:/Uni/Academic Semester 5/ECE 5500 Digital systems/Lab 6/simulation/questa
+T_opt
+!s110 1680269249
+V4AYZniZKLX0Ggj95;]>l:1
+04 13 10 work digital_clock behavioral 1
+=1-7cb27de2b4ef-6426dfc0-1eb-3fe0
+Z2 !s124 OEM10U5 
+Z3 o-quiet -auto_acc_if_foreign -work work
+Z4 tCvgOpt 0
+n@_opt
+Z5 OL;O;2021.2;73
+R1
+T_opt1
+!s110 1680563008
+VYUWM^GN^jT2ni8Qf?M@na3
+Z6 04 12 7 work tb_counter26 tb_arch 1
+=1-e0d55ed48b88-642b5b40-12e-5188
+!s124 OEM10U2 
+Z7 o-quiet -auto_acc_if_foreign -work work -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cyclonev -L cyclonev_hssi -L rtl_work -L work +acc
+R4
+n@_opt1
+R5
+R1
+T_opt2
+!s110 1680598267
+V^KS?YQ7NaZ2ZYMbRgzKlI2
+R6
+=1-7cb27de2b4ef-642be4fb-62-2fd0
+R2
+R7
+R4
+n@_opt2
+R5
+R1
+T_opt3
+!s110 1680599002
+VaV]eQXnhB6]Fle6Hm[ifQ1
+R6
+=1-7cb27de2b4ef-642be7da-147-f24
+R2
+R7
+R4
+n@_opt3
+R5
+R1
+T_opt4
+!s110 1680703668
+VY4EoL?>H?fm<mz;AeGB_Z0
+R6
+=1-e0d55ed48b88-642d80b4-90-23ac
+R2
+R3
+R4
+n@_opt4
+R5
+R1
+T_opt5
+!s110 1680704092
+VSiV>lhDQ]Sf0AZPfAJafR1
+R6
+=1-e0d55ed48b88-642d825c-115-303c
+R2
+R3
+R4
+n@_opt5
+R5
+Ecounter26
+Z8 w1680618932
+Z9 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z10 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z11 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 0
+Z12 dD:/Downloads/Lab 6 - Shair-20230405T133704Z-001/Lab 6 - Shair/Lab 6-tbworks/simulation/questa
+Z13 8D:/Downloads/Lab 6 - Shair-20230405T133704Z-001/Lab 6 - Shair/Lab 6-tbworks/Components.vhd
+Z14 FD:/Downloads/Lab 6 - Shair-20230405T133704Z-001/Lab 6 - Shair/Lab 6-tbworks/Components.vhd
+l0
+L36 1
+V0kcHM19YPCmngh_3IQ]]21
+!s100 l[`YLlFG_OSIS=Vg=jFSB1
+Z15 OL;C;2021.2;73
+31
+Z16 !s110 1680704076
+!i10b 1
+Z17 !s108 1680704076.000000
+Z18 !s90 -reportprogress|300|-93|-work|work|D:/Downloads/Lab 6 - Shair-20230405T133704Z-001/Lab 6 - Shair/Lab 6-tbworks/Components.vhd|
+Z19 !s107 D:/Downloads/Lab 6 - Shair-20230405T133704Z-001/Lab 6 - Shair/Lab 6-tbworks/Components.vhd|
+!i113 0
+Z20 o-93 -work work
+Z21 tExplicit 1 CvgOpt 0
+Artl
+R9
+R10
+R11
+DEx4 work 9 counter26 0 22 0kcHM19YPCmngh_3IQ]]21
+!i122 0
+l44
+L42 25
+V5_ce9UiZEHg=>Y95ClcJ@3
+!s100 emQ_ME67^mMe_V31YC@UJ0
+R15
+31
+R16
+!i10b 1
+R17
+R18
+R19
+!i113 0
+R20
+R21
+Ecounter26bit
+R8
+R9
+R10
+R11
+!i122 0
+R12
+R13
+R14
+l0
+L5 1
+VOR=5d90zFPEABF0dUkQbP0
+!s100 AW=A[KV?dX]j0BZ_[cNj<0
+R15
+31
+R16
+!i10b 1
+R17
+R18
+R19
+!i113 0
+R20
+R21
+Artl
+R9
+R10
+R11
+DEx4 work 12 counter26bit 0 22 OR=5d90zFPEABF0dUkQbP0
+!i122 0
+l13
+L11 20
+V11?jH=UVRTfV[m_D=h9^P2
+!s100 i^E?l]SXg>o=PTi_6ehzf2
+R15
+31
+R16
+!i10b 1
+R17
+R18
+R19
+!i113 0
+R20
+R21
+Esevensegdecoder
+R8
+R10
+R11
+!i122 0
+R12
+R13
+R14
+l0
+L71 1
+VP8j7`eOSAYfYd9RhdMcKb2
+!s100 G:aP=>O_G<C[>`B]ZM7Zm1
+R15
+31
+R16
+!i10b 1
+R17
+R18
+R19
+!i113 0
+R20
+R21
+Abehavioral
+R10
+R11
+DEx4 work 15 sevensegdecoder 0 22 P8j7`eOSAYfYd9RhdMcKb2
+!i122 0
+l77
+L76 18
+VczSg[zPh`1T`hG]8[WIfM3
+!s100 79_C8iINP?7z[foQ65k2f1
+R15
+31
+R16
+!i10b 1
+R17
+R18
+R19
+!i113 0
+R20
+R21
+Etb_counter26
+Z22 w1680703545
+R9
+R10
+R11
+!i122 1
+R12
+Z23 8D:/Downloads/Lab 6 - Shair-20230405T133704Z-001/Lab 6 - Shair/Lab 6-tbworks/tb_counter26.vhd
+Z24 FD:/Downloads/Lab 6 - Shair-20230405T133704Z-001/Lab 6 - Shair/Lab 6-tbworks/tb_counter26.vhd
+l0
+L5 1
+VknBmNXS^83aAC2EnXm7MK3
+!s100 X:8N?>XBGh]i6;ojZ8_E42
+R15
+31
+R16
+!i10b 1
+R17
+Z25 !s90 -reportprogress|300|-93|-work|work|D:/Downloads/Lab 6 - Shair-20230405T133704Z-001/Lab 6 - Shair/Lab 6-tbworks/tb_counter26.vhd|
+Z26 !s107 D:/Downloads/Lab 6 - Shair-20230405T133704Z-001/Lab 6 - Shair/Lab 6-tbworks/tb_counter26.vhd|
+!i113 0
+R20
+R21
+Atb_arch
+R9
+R10
+R11
+DEx4 work 12 tb_counter26 0 22 knBmNXS^83aAC2EnXm7MK3
+!i122 1
+l39
+L10 144
+VE?@IN[H7U??6U]nm;Tz>00
+!s100 IKVoRN3e_i5P3YXBmjjQ93
+R15
+31
+R16
+!i10b 1
+R17
+R25
+R26
+!i113 0
+R20
+R21

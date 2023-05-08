@@ -1,0 +1,83 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity tb_counter26 is
+end tb_counter26;
+
+architecture tb_arch of tb_counter26 is
+    component counter26 is
+        port (
+            clk, clrb, enb: in std_logic;
+            q: out std_logic_vector(25 downto 0)
+        );
+    end component;
+
+    signal clk, clrb, enb: std_logic := '0';
+    signal q: std_logic_vector(25 downto 0);
+begin
+    dut: counter26
+        port map (
+            clk => clk,
+            clrb => clrb,
+            enb => enb,
+            q => q
+        );
+
+    stim_proc: process
+    begin
+        clrb <= '0';
+        enb <= '0';
+        wait for 10 ns;
+        
+        -- Clear counter
+        clrb <= '1';
+        wait for 10 ns;
+        clrb <= '0';
+        wait for 10 ns;
+        
+        -- Count up to 5
+        enb <= '1';
+        wait for 10 ns;
+        assert q = "00000000000000000000000101" report "Unexpected output value for count 5" severity error;
+        
+        -- Count up to 100
+        for i in 1 to 95 loop
+            wait for 10 ns;
+        end loop;
+        assert q = "0000000000000000000001100100" report "Unexpected output value for count 100" severity error;
+        
+        -- Stop counting
+        enb <= '0';
+        wait for 10 ns;
+        assert q = "0000000000000000000001100100" report "Unexpected output value after counting stopped" severity error;
+        
+        -- Clear and count up to 10
+        clrb <= '1';
+        wait for 10 ns;
+        clrb <= '0';
+        enb <= '1';
+        wait for 10 ns;
+        assert q = "00000000000000000000001010" report "Unexpected output value after clearing and counting up to 10" severity error;
+        
+        -- Stop counting
+        enb <= '0';
+        wait for 10 ns;
+        assert q = "00000000000000000000001010" report "Unexpected output value after counting stopped" severity error;
+
+        wait;
+    end process;
+    
+    clk_proc: process
+    begin
+        clk <= '0';
+        wait for 5 ns;
+        clk <= '1';
+        wait for 5 ns;
+        clk <= '0';
+        wait for 5 ns;
+        clk <= '1';
+        wait for 5 ns;
+        wait;
+    end process;
+end tb_arch;

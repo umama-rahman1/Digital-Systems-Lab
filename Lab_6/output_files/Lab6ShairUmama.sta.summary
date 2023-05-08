@@ -1,0 +1,181 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1100mV 85C Model Setup 'counter26:dut|cnt[0]'
+Slack : -7.460
+TNS   : -561.568
+
+Type  : Slow 1100mV 85C Model Setup 'CLOCK_50'
+Slack : -7.016
+TNS   : -181.844
+
+Type  : Slow 1100mV 85C Model Hold 'CLOCK_50'
+Slack : 0.324
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'counter26:dut|cnt[0]'
+Slack : 0.431
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Recovery 'counter26:dut|cnt[0]'
+Slack : -3.450
+TNS   : -269.704
+
+Type  : Slow 1100mV 85C Model Recovery 'KEY[0]'
+Slack : -3.243
+TNS   : -47.996
+
+Type  : Slow 1100mV 85C Model Removal 'counter26:dut|cnt[0]'
+Slack : 1.176
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Removal 'KEY[0]'
+Slack : 1.368
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'counter26:dut|cnt[0]'
+Slack : -0.394
+TNS   : -55.657
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -0.394
+TNS   : -13.481
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'KEY[0]'
+Slack : -0.127
+TNS   : -0.127
+
+Type  : Slow 1100mV 0C Model Setup 'counter26:dut|cnt[0]'
+Slack : -7.324
+TNS   : -545.040
+
+Type  : Slow 1100mV 0C Model Setup 'CLOCK_50'
+Slack : -6.745
+TNS   : -174.486
+
+Type  : Slow 1100mV 0C Model Hold 'CLOCK_50'
+Slack : 0.027
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'counter26:dut|cnt[0]'
+Slack : 0.446
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Recovery 'counter26:dut|cnt[0]'
+Slack : -3.338
+TNS   : -256.883
+
+Type  : Slow 1100mV 0C Model Recovery 'KEY[0]'
+Slack : -3.170
+TNS   : -46.660
+
+Type  : Slow 1100mV 0C Model Removal 'counter26:dut|cnt[0]'
+Slack : 1.061
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Removal 'KEY[0]'
+Slack : 1.155
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'counter26:dut|cnt[0]'
+Slack : -0.394
+TNS   : -53.808
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -0.394
+TNS   : -14.521
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'KEY[0]'
+Slack : -0.113
+TNS   : -0.113
+
+Type  : Fast 1100mV 85C Model Setup 'counter26:dut|cnt[0]'
+Slack : -4.881
+TNS   : -340.751
+
+Type  : Fast 1100mV 85C Model Setup 'CLOCK_50'
+Slack : -4.388
+TNS   : -113.724
+
+Type  : Fast 1100mV 85C Model Hold 'counter26:dut|cnt[0]'
+Slack : 0.164
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'CLOCK_50'
+Slack : 0.202
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Recovery 'counter26:dut|cnt[0]'
+Slack : -2.340
+TNS   : -186.582
+
+Type  : Fast 1100mV 85C Model Recovery 'KEY[0]'
+Slack : -1.702
+TNS   : -24.837
+
+Type  : Fast 1100mV 85C Model Removal 'counter26:dut|cnt[0]'
+Slack : 0.683
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Removal 'KEY[0]'
+Slack : 0.770
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'KEY[0]'
+Slack : -0.265
+TNS   : -4.067
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -0.091
+TNS   : -2.340
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'counter26:dut|cnt[0]'
+Slack : -0.087
+TNS   : -2.406
+
+Type  : Fast 1100mV 0C Model Setup 'counter26:dut|cnt[0]'
+Slack : -4.504
+TNS   : -310.861
+
+Type  : Fast 1100mV 0C Model Setup 'CLOCK_50'
+Slack : -3.733
+TNS   : -96.850
+
+Type  : Fast 1100mV 0C Model Hold 'counter26:dut|cnt[0]'
+Slack : 0.147
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'CLOCK_50'
+Slack : 0.192
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Recovery 'counter26:dut|cnt[0]'
+Slack : -2.205
+TNS   : -177.051
+
+Type  : Fast 1100mV 0C Model Recovery 'KEY[0]'
+Slack : -1.437
+TNS   : -20.813
+
+Type  : Fast 1100mV 0C Model Removal 'KEY[0]'
+Slack : 0.587
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Removal 'counter26:dut|cnt[0]'
+Slack : 0.628
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'KEY[0]'
+Slack : -0.228
+TNS   : -3.315
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -0.088
+TNS   : -2.262
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'counter26:dut|cnt[0]'
+Slack : -0.028
+TNS   : -0.334
+
+------------------------------------------------------------

@@ -1,0 +1,62 @@
+# Current time Tue Apr  4 08:27:34 2023
+# Program = vish
+# Id = "2021.2"
+# Version = "2021.04"
+# Date = "Apr 14 2021"
+# Platform = win64
+
+Exception c0000005 has occurred at address 6de11b69. Traceback:
+# 0    0x6de11b69: 'Tcl_ParseCommand + 0x1e9'
+# 1    0x6dd48269: 'Tcl_EvalEx + 0x329'
+# 2    0x6dd491a8: 'Tcl_Eval + 0x38'
+# 3    0x4011d360: '<unknown (@0x4011d360)>'
+# 4    0x4012a34b: '<unknown (@0x4012a34b)>'
+# 5    0x6dd47103: 'TclNRRunCallbacks + 0x63'
+# 6    0x6dd47103: 'TclNRRunCallbacks + 0x63'
+# 7    0x6de32b84: 'TclServiceIdle + 0xa74'
+# 8    0x6de3217c: 'TclServiceIdle + 0x6c'
+# 9    0x6ddfa9f3: 'Tcl_DoOneEvent + 0x193'
+# 10   0x6dbcaee5: 'Tk_MainLoop + 0x25'
+# 11   0x6dc0d282: 'Tk_MainEx + 0x932'
+# 12   0x401abae2: 'Mtirpc_Init + 0x23662'
+# 13   0x401ae6c4: 'Mtirpc_Init + 0x26244'
+# 14   0x40775810: 'Tclsqlite3_Init + 0x1c000'
+# 15   0xa26c7614: 'BaseThreadInitThunk + 0x14'
+# 16   0xa37026a1: 'RtlUserThreadStart + 0x21'
+StackWalk failed 0
+# End of Stack Trace
+
+# Current time Tue Apr  4 19:18:07 2023
+# Program = vish
+# Id = "2021.2"
+# Version = "2021.04"
+# Date = "Apr 14 2021"
+# Platform = win64
+
+Exception c0000005 has occurred at address 4022e5af. Traceback:
+# 0    0x4022e5af: 'Mtirpc_Init + 0xa612f'
+# 1    0x4022c231: 'Mtirpc_Init + 0xa3db1'
+# 2    0x4025ec90: 'Mtirpc_Init + 0xd6810'
+# 3    0x6dd47103: 'TclNRRunCallbacks + 0x63'
+# 4    0x6dd47103: 'TclNRRunCallbacks + 0x63'
+# 5    0x6db8ab05: 'Tk_SizeOfBitmap + 0x4335'
+# 6    0x6db89d51: 'Tk_SizeOfBitmap + 0x3581'
+# 7    0x6dd47103: 'TclNRRunCallbacks + 0x63'
+# 8    0x6dd48974: 'Tcl_EvalEx + 0xa34'
+# 9    0x6dd47f68: 'Tcl_EvalEx + 0x28'
+# 10   0x6db8431a: 'Tk_BindEvent + 0x91a'
+# 11   0x6dbbbd41: 'TkBindEventProc + 0x291'
+# 12   0x6dbcc614: 'Tk_HandleEvent + 0x2f4'
+# 13   0x6dbcb2da: 'TkDeleteThreadExitHandler + 0x31a'
+# 14   0x6ddfa56d: 'Tcl_ServiceEvent + 0xed'
+# 15   0x6ddfa9e4: 'Tcl_DoOneEvent + 0x184'
+# 16   0x6dbcaee5: 'Tk_MainLoop + 0x25'
+# 17   0x6dc0d282: 'Tk_MainEx + 0x932'
+# 18   0x401abae2: 'Mtirpc_Init + 0x23662'
+# 19   0x401ae6c4: 'Mtirpc_Init + 0x26244'
+# 20   0x40775810: 'Tclsqlite3_Init + 0x1c000'
+# 21   0xa26c7614: 'BaseThreadInitThunk + 0x14'
+# 22   0xa37026a1: 'RtlUserThreadStart + 0x21'
+StackWalk failed 0
+# End of Stack Trace
+
